@@ -32,7 +32,7 @@ export interface Pick {
   gaps: string[]
 }
 
-const norm = (u: string) => u.replace(/\/+$/, "")
+import { jobUrlKey, companyRoleKey } from "./lib/joburl.ts"
 
 export function isNewsItem(j: SeenJob, leadType?: string): boolean {
   return j.portal === "funding-news-search" || leadType === "funded_startup"
@@ -44,11 +44,12 @@ export function isNewsItem(j: SeenJob, leadType?: string): boolean {
  */
 export function candidatePool(p: Paths): SeenJob[] {
   const leads = readLeads(p.leads)
-  const tracked = new Set(readTracker(p.tracker).rows.map((r) => norm(r.source)).filter(Boolean))
+  const rows = readTracker(p.tracker).rows
+  const tracked = new Set([...rows.filter((r) => r.source).map((r) => jobUrlKey(r.source)), ...rows.map((r) => companyRoleKey(r.company, r.role))])
   return readSeen(p.seen).filter((j) => {
     const l = leads[j.key]
     if (j.status === "skipped" || j.status === "expired") return false
-    if (tracked.has(norm(j.url))) return false
+    if (tracked.has(jobUrlKey(j.url)) || tracked.has(companyRoleKey(j.company, j.title))) return false
     if (isNewsItem(j, l?.lead_type)) return false
     if (l && (l.flags.scam.length || l.flags.discrimination.length)) return false
     return true

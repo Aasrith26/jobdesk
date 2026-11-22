@@ -29,7 +29,7 @@ export interface Task {
 
 const file = (p: Paths) => join(p.data, "tasks.json")
 
-function alive(pid: number): boolean {
+export function isAlive(pid: number): boolean {
   try {
     process.kill(pid, 0)
     return true
@@ -43,7 +43,7 @@ export function readTasks(p: Paths): Task[] {
   const raw = readJson<Task[]>(file(p), [])
   const list = Array.isArray(raw) ? raw : []
   return list
-    .map((t) => (t.status === "running" && t.pid !== process.pid && !alive(t.pid) ? { ...t, status: "interrupted" as const, message: t.message ?? "Stopped when jobdesk stopped." } : t))
+    .map((t) => (t.status === "running" && t.pid !== process.pid && !isAlive(t.pid) ? { ...t, status: "interrupted" as const, message: t.message ?? "Stopped when jobdesk stopped." } : t))
     .sort((a, b) => b.started.localeCompare(a.started))
 }
 

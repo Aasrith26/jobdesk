@@ -115,6 +115,43 @@ describe("applying: prepare, review, confirm, one tap, applied", () => {
       return ok("Drafted.", 0.5)
     }
   }
+  test("/apply is told up front that drafting is approved (it can't ask mid-run), and must still stop on a weak fit", async () => {
+    const { DRAFT_PROMPT } = await import("../src/apply.ts")
+    const prompt = DRAFT_PROMPT("https://e.com/x")
+    expect(prompt.startsWith("/apply https://e.com/x")).toBe(true)
+    expect(prompt).toContain("already answered Step 1's question")
+    expect(prompt).toContain("Do not ask it")
+    expect(prompt).toContain("weak (below 50)")
+  })
+  test("the same job under two links (a real case): the CV /apply wrote is found, not drafted again", async () => {
+    const { jobUrlKey } = await import("../src/lib/joburl.ts")
+    const found = "https://in.linkedin.com/jobs/view/genai-ai-engineer-at-prasanz-4448040623"
+    const recorded = "https://www.linkedin.com/jobs/view/4448040623"
+    expect(jobUrlKey(found)).toBe(jobUrlKey(recorded))
+    expect(jobUrlKey("https://www.linkedin.com/jobs/search/?currentJobId=4448040623")).toBe("linkedin:4448040623")
+    expect(jobUrlKey("https://boards.greenhouse.io/bolt/jobs/1?gh_src=x")).toBe(jobUrlKey("https://boards.greenhouse.io/bolt/jobs/1/"))
+    expect(jobUrlKey("https://boards.greenhouse.io/bolt/jobs/1")).not.toBe(jobUrlKey("https://boards.greenhouse.io/bolt/jobs/2"))
+    const p = tmpWorkspace([`2026-11-23,Prasanz,IT,GenAI / AI Engineer,AI,portal,drafted,,57,,cv/prasanz.tex,,${recorded},`], { pz: { title: "GenAI / AI Engineer", company: "Prasanz", url: found, status: "new" } })
+    writeFileSync(join(p.root, "cv", "prasanz.tex"), "\\begin{document}\n\\resumeItem{RAG}{Built hybrid retrieval on pgvector.}\n\\end{document}\n")
+    const calls: string[] = []
+    const r = await prepare(p, readConfig(p.config), { key: "pz", url: found, company: "Prasanz", role: "GenAI / AI Engineer" }, { exec: async (args) => { calls.push(promptOf(args)); return ok('{"unsupported": []}') } })
+    expect(r.ok).toBe(true)
+    expect(calls.some((c) => c.startsWith("/apply"))).toBe(false)
+    // And a job already in the tracker is no longer offered as new.
+    const { freshPicks } = await import("../src/recommend.ts")
+    saveScores(p.scores, { pz: { score: 80, verdict: "", reason: "", strengths: [], gaps: [], location: "PASS", basis: "posting excerpt", date: "x", model: "haiku" } })
+    expect(freshPicks(p, readConfig(p.config)).picks).toHaveLength(0)
+  })
+  test("a CV run killed by a restart shows as interrupted, never as drafting forever", () => {
+    const p = ws()
+    writeFileSync(join(p.data, "applications.json"), JSON.stringify({
+      dead: { key: "dead", url: "https://e.com/d", company: "D", role: "R", stage: "drafting", started: "2026-11-22T20:00:00Z", updated: "2026-11-22T20:00:00Z", pid: 2 ** 22 + 9 },
+      old: { key: "old", url: "https://e.com/o", company: "O", role: "R", stage: "drafting", started: "2026-11-22T20:00:00Z", updated: "2026-11-22T20:00:00Z" },
+    }))
+    const apps = readApps(p)
+    expect(apps.dead).toMatchObject({ stage: "failed", note: expect.stringContaining("Interrupted") })
+    expect(apps.old.stage).toBe("failed")
+  })
   test("a weak fit stops before any CV, and says why", async () => {
     const p = ws()
     const r = await prepare(p, readConfig(p.config), { key: "r1", url: "https://e.com/c", company: "Cove", role: "Sales Lead" }, { exec: drafting(p) })

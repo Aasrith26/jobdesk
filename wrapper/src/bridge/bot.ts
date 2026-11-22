@@ -17,6 +17,7 @@ import { prepare, confirm, markApplied, shelve } from "../apply.ts"
 import { readReview, reviewSummary, trackerRowFor, type ApplicationReview } from "../review.ts"
 import { askAgent } from "../agent/run.ts"
 import { addTurn } from "../agent/memory.ts"
+import { sameJobUrl } from "../lib/joburl.ts"
 import { openItems, resolveItem, getItem, type AttentionItem } from "../data/attention.ts"
 import { setAnswer, writeBackToProfile, seedFromProfile } from "../data/answers.ts"
 import { readTracker, updateStatus, bucketOf, findRow, appendRow, appendNote, canonicalStatus, isFinal, followUpsSent, type TrackerRow } from "../data/tracker.ts"
@@ -540,7 +541,7 @@ export class Bot {
     const job = this.resolveJob(arg)
     if (!job) return this.say(chatId, "Which job? Tell me the company, or ask me to show your jobs.").then(() => false)
     const ref = { key: job.key ?? job.url, url: job.url, company: job.company, role: job.role }
-    if (!trackerRowFor(this.p, job.url)?.cv_file) {
+    if (!trackerRowFor(this.p, job.url, job.company, job.role)?.cv_file) {
       const cap = capCheck(this.p, this.cfg())
       if (!cap.ok) return this.say(chatId, cap.message!).then(() => false)
       await this.say(chatId, `Writing your CV and letter for ${job.role || job.url}. This can take 5 to 15 minutes. Before anything goes anywhere, I'll show you exactly what changed.`)
@@ -579,7 +580,7 @@ export class Bot {
   private async applyFlow(chatId: number, arg: string): Promise<void> {
     const job = this.resolveJob(arg)
     if (!job) return this.say(chatId, "Which job? Tell me the company, or ask me to show your jobs.")
-    const row = trackerRowFor(this.p, job.url)
+    const row = trackerRowFor(this.p, job.url, job.company, job.role)
     const was = row ? canonicalStatus(row.status) : ""
     if (row && was !== "" && was !== "drafted") return this.say(chatId, `You've already applied to ${row.company} (it's marked "${was}").`)
     const existing = readReview(this.p, job.key ?? job.url)
@@ -590,7 +591,7 @@ export class Bot {
   private async cmdApplied(chatId: number, arg: string): Promise<void> {
     const job = this.resolveJob(arg)
     if (!job) return this.say(chatId, "Which job? Tell me the company.")
-    if (!trackerRowFor(this.p, job.url) && !findRow(readTracker(this.p.tracker), { company: job.company, role: job.role }) && (!job.company || !job.role)) return this.say(chatId, "I don't know that job's company and role yet. Paste its link first.")
+    if (!trackerRowFor(this.p, job.url, job.company, job.role) && !findRow(readTracker(this.p.tracker), { company: job.company, role: job.role }) && (!job.company || !job.role)) return this.say(chatId, "I don't know that job's company and role yet. Paste its link first.")
     try {
       const r = markApplied(this.p, job.key ?? job.url, today(this.now()))
       if (r.already) return this.say(chatId, `${r.company} is already marked "${r.already}". To record what happened next, just tell me (for example "${r.company} called me for an interview").`)
@@ -607,7 +608,7 @@ export class Bot {
     if (!found) return this.say(chatId, usage)
     const job = this.resolveJob(found.rest)
     const t = readTracker(this.p.tracker)
-    const row = job ? (t.rows.find((r) => r.source === job.url) ?? findRow(t, { company: job.company, role: job.role || undefined })) : undefined
+    const row = job ? (t.rows.find((r) => sameJobUrl(r.source, job.url)) ?? findRow(t, { company: job.company, role: job.role || undefined })) : undefined
     if (!row) return this.say(chatId, `"${found.rest}" isn't in your tracker. Send /status to see your applications, or /applied first.`)
     const was = canonicalStatus(row.status)
     if (was === found.status) return this.say(chatId, `${row.company} is already marked "${found.label}".`)
@@ -623,7 +624,7 @@ export class Bot {
       await this.say(chatId, "Your setting is Kit only (L0), so here is the kit. To let me fill forms, run: jobdesk config level L1")
       return this.cmdKit(chatId, arg)
     }
-    const row = readTracker(this.p.tracker).rows.find((r) => r.source === job.url)
+    const row = readTracker(this.p.tracker).rows.find((r) => sameJobUrl(r.source, job.url))
     const pdf = (t: string) => (t ? t.replace(/\.tex$/i, ".pdf") : undefined)
     await this.say(chatId, `Filling the form for ${job.company}. I'll show you everything before anything is sent.`)
     const res = await this.busy(chatId, () => (this.d.fillFn ?? fillApplication)(this.p, cfg, {
@@ -889,7 +890,7 @@ export class Bot {
     const bySource = /^https?:\/\//.test(ref.trim()) ? t.rows.find((r) => r.source.replace(/\/+$/, "") === ref.trim().replace(/\/+$/, "")) : undefined
     if (bySource) return bySource
     const job = this.resolveJob(ref)
-    return job ? (t.rows.find((r) => r.source && r.source === job.url) ?? findRow(t, { company: job.company })) : undefined
+    return job ? (t.rows.find((r) => sameJobUrl(r.source, job.url)) ?? findRow(t, { company: job.company })) : undefined
   }
 
   /** A short follow-up for an application that has gone quiet. It is a draft: the owner sends it. */

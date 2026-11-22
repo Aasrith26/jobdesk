@@ -15,6 +15,7 @@ import { readJson, writeJson, nowIso } from "./lib/store.ts"
 import { unsupportedClaims } from "./safety/grounding.ts"
 import { readResume } from "./intake.ts"
 import type { ClaudeExec } from "./lib/claude.ts"
+import { sameJobUrl, companyRoleKey } from "./lib/joburl.ts"
 
 // ---------- reading LaTeX and resumes as plain lines ----------
 
@@ -209,9 +210,13 @@ export async function baseResume(p: Paths): Promise<{ file: string; lines: strin
 
 const pdfOf = (tex: string) => tex.replace(/\.tex$/i, ".pdf")
 
-export function trackerRowFor(p: Paths, url: string): TrackerRow | undefined {
-  const norm = (u: string) => u.replace(/\/+$/, "")
-  return readTracker(p.tracker).rows.find((r) => norm(r.source) === norm(url))
+/** The tracker row for a job: same job link (by identity, not exact text), else same company and role. */
+export function trackerRowFor(p: Paths, url: string, company?: string, role?: string): TrackerRow | undefined {
+  const rows = readTracker(p.tracker).rows
+  const byUrl = rows.find((r) => sameJobUrl(r.source, url))
+  if (byUrl || !company || !role) return byUrl
+  const k = companyRoleKey(company, role)
+  return rows.find((r) => companyRoleKey(r.company, r.role) === k)
 }
 
 /** Build (and save) the review for a drafted application. Uses the small model once for the check. */
@@ -273,7 +278,7 @@ export function reviewSummary(r: ApplicationReview): string {
   const shown = r.changes.filter((c) => c.kind !== "dropped").slice(0, 6)
   for (const c of shown) lines.push(c.kind === "new" ? `+ Added: ${c.after}` : `~ Reworded: ${c.after}`)
   if (r.changes.length - shown.length - n("dropped") > 0) lines.push(`...and ${r.changes.length - shown.length - n("dropped")} more.`)
-  if (n("dropped")) lines.push(`- Left out ${n("dropped")} line${n("dropped") === 1 ? "" : "s"} that matter less for this job.`)
+  if (n("dropped")) lines.push(`- Left out ${n("dropped")} line${n("dropped") === 1 ? " that matters" : "s that matter"} less for this job.`)
   if (!r.changes.length) lines.push("Nothing: it's your resume as it is.")
   lines.push(`${r.unchanged} line${r.unchanged === 1 ? "" : "s"} kept as they were.`)
   lines.push("", r.unsupported.length ? `Check these. I couldn't find them in your profile:\n${r.unsupported.map((u) => `! ${u}`).join("\n")}` : r.check_error ? `The fact check didn't run (${r.check_error}). Read it carefully.` : r.checked ? "I checked every changed line and the letter against your profile: nothing is made up." : "There was nothing new to check.")

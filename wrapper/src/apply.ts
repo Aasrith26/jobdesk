@@ -16,6 +16,8 @@ import { buildReview, readReview, trackerRowFor, type ApplicationReview } from "
 import { addItem, resolveItem } from "./data/attention.ts"
 import { react } from "./data/recommended.ts"
 import { join } from "node:path"
+import { isAlive } from "./tasks.ts"
+import { sameJobUrl } from "./lib/joburl.ts"
 
 export type Stage = "drafting" | "ready" | "confirmed" | "applied" | "failed" | "stopped"
 
@@ -32,6 +34,8 @@ export interface AppState {
   /** /apply's own words when it stopped or failed (its fit verdict, a posting it couldn't read). */
   report?: string
   usd?: number
+  /** The jobdesk process doing the drafting, so a run killed by a restart isn't shown as running forever. */
+  pid?: number
 }
 
 export interface JobRef {
@@ -45,7 +49,15 @@ const file = (p: Paths) => join(p.data, "applications.json")
 
 export function readApps(p: Paths): Record<string, AppState> {
   const raw = readJson<Record<string, AppState>>(file(p), {})
-  return raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {}
+  const all = raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {}
+  // "drafting" is only true while some jobdesk is actually doing it. Stopped mid-run (a restart,
+  // a crash, a closed terminal): say so, so the user can try again instead of waiting forever.
+  for (const a of Object.values(all)) {
+    const gone = a.pid ? a.pid !== process.pid && !isAlive(a.pid) : a.pid === undefined && !inFlight.has(a.key) && Date.now() - Date.parse(a.updated) > 30 * 60_000
+    const orphaned = a.pid === process.pid && !inFlight.has(a.key)
+    if (a.stage === "drafting" && (gone || orphaned)) Object.assign(a, { stage: "failed", note: "Interrupted: jobdesk stopped while writing the CV. Nothing was sent. Try again." })
+  }
+  return all
 }
 
 function setApp(p: Paths, job: JobRef, change: Partial<AppState>): AppState {
@@ -72,8 +84,18 @@ export function findJob(p: Paths, ref: string): JobRef | null {
   return null
 }
 
+/**
+ * /apply is written for a person at the keyboard: after the evaluation it asks "Should I proceed
+ * with drafting?" and waits. jobdesk runs it unattended, so that question is answered here, up front.
+ */
 export const DRAFT_PROMPT = (url: string) =>
-  `/apply ${url}\n\nThis run was started from jobdesk (the dashboard or the phone), which can't answer questions mid-run. The candidate approved drafting in advance and will review the CV and letter before anything is sent. If the posting guard flags anything, or the fit is weak, stop after the evaluation and report instead of drafting.`
+  `/apply ${url}
+
+You are running unattended from jobdesk: nobody can answer questions during this run.
+- The candidate has already answered Step 1's question ("Should I proceed with drafting the CV and cover letter?") with YES. Do not ask it, or anything else.
+- The only reasons to stop after the evaluation: the overall fit is weak (below 50), or the posting guard flags the posting. Then stop and say why in two or three plain sentences.
+- Otherwise go through every step: draft the CV and cover letter, compile them, verify them, and record the application in the tracker with status "drafted". The candidate reviews everything in jobdesk before anything is sent.
+- If LaTeX is not installed and the PDFs can't be built, keep the .tex files, say so in one sentence, and still record the tracker row.`
 
 /** Work in progress in this process, so a double tap (or the phone and the dashboard at once) runs it once. */
 const inFlight = new Map<string, Promise<PrepareResult>>()
@@ -99,14 +121,14 @@ export function prepare(p: Paths, cfg: Config, job: JobRef, o: { exec?: ClaudeEx
   const running = inFlight.get(job.key)
   if (running) return running
   const work = (async (): Promise<PrepareResult> => {
-    let row = trackerRowFor(p, job.url)
+    let row = trackerRowFor(p, job.url, job.company, job.role)
     if (!row?.cv_file) {
       const cap = capCheck(p, cfg)
       if (!cap.ok) return { ok: false, state: setApp(p, job, { stage: "stopped", note: cap.message }), error: cap.message }
-      setApp(p, job, { stage: "drafting", note: undefined, report: undefined, started: nowIso() })
+      setApp(p, job, { stage: "drafting", note: undefined, report: undefined, usd: undefined, started: nowIso(), pid: process.pid })
       const r = await runClaude({ root: p.root, ledger: p.costs, cfg, task: "draft", prompt: DRAFT_PROMPT(job.url), allowedTools: TOOLS.apply, exec: o.exec })
       if (r.skipped) return { ok: false, state: setApp(p, job, { stage: "failed", note: r.error, usd: r.usd }), error: r.error }
-      row = trackerRowFor(p, job.url)
+      row = trackerRowFor(p, job.url, job.company, job.role)
       if (!row?.cv_file) {
         const report = (r.text.trim() || r.error || "").slice(0, 6000)
         const state = setApp(p, job, { stage: r.ok ? "stopped" : "failed", note: r.ok ? "It stopped before writing a CV. Open the report to see why." : r.error ?? "The drafting run didn't finish.", report, usd: r.usd })
@@ -148,7 +170,7 @@ export function markApplied(p: Paths, ref: string, day: string = today()): { com
   const job = findJob(p, ref)
   if (!job) throw new Error(`I can't find "${ref}".`)
   const t = readTracker(p.tracker)
-  const row = t.rows.find((r) => r.source === job.url) ?? (job.company ? findRow(t, { company: job.company, role: job.role || undefined }) : undefined)
+  const row = t.rows.find((r) => sameJobUrl(r.source, job.url)) ?? (job.company ? findRow(t, { company: job.company, role: job.role || undefined }) : undefined)
   if (!row) {
     if (!job.company || !job.role) throw new Error("I don't know that job's company and role yet.")
     const seen = readSeen(p.seen).find((s) => s.key === job.key)

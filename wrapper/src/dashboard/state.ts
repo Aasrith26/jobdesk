@@ -17,6 +17,7 @@ import { join } from "node:path"
 import { readApps, isPreparing } from "../apply.ts"
 import { readReview } from "../review.ts"
 import { visibleTasks } from "../tasks.ts"
+import { jobUrlKey } from "../lib/joburl.ts"
 
 const BUCKETS: Bucket[] = ["Drafted", "Active", "Interview", "Offer", "Hired", "Rejected/Closed"]
 const REPLIED = new Set(["interview", "offer", "hired", "rejected", "offer_declined"])
@@ -27,12 +28,12 @@ export function computeState(p: Paths) {
   const seen = readSeen(p.seen)
   const leads = readLeads(p.leads)
   const archives = readArchives(p.applications)
-  const byUrl = new Map(seen.map((s) => [s.url.replace(/\/+$/, ""), s]))
+  const byUrl = new Map(seen.map((s) => [jobUrlKey(s.url), s]))
   const unknown = new Set<string>()
   const applications = tracker.rows.map((r) => {
     const b = bucketOf(r.status)
     if (b.unknown && r.status.trim()) unknown.add(r.status)
-    const s = byUrl.get(r.source.replace(/\/+$/, ""))
+    const s = byUrl.get(jobUrlKey(r.source))
     const pdf = (tex: string) => (tex ? tex.replace(/\.tex$/i, ".pdf") : "")
     return {
       date: r.date, company: r.company, role: r.role, sector: r.sector, channel: r.channel, status: canonicalStatus(r.status),
