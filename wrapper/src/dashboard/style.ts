@@ -29,7 +29,7 @@ main{min-width:0}
 .top h1{font-size:20px;margin:0;font-weight:600;letter-spacing:-.01em}
 .top p{margin:2px 0 0;color:var(--muted);font-size:13px}
 .top p:empty{display:none}
-.content{padding:24px 36px 56px;max-width:1240px}
+.content{padding:24px 36px 56px}
 #tasks:empty{display:none}
 .task{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:10px 36px;border-bottom:1px solid var(--line);background:var(--soft);font-size:13px}
 .task .label{font-weight:500;display:inline-flex;align-items:center;gap:8px}
@@ -68,7 +68,7 @@ tbody tr:last-child td{border-bottom:0}
 a.t{text-decoration:underline;text-decoration-color:#c4c4c4;text-underline-offset:3px}
 a.t:hover{text-decoration-color:#111}
 .sub{color:var(--muted);font-size:12.5px}
-.why{max-width:460px;color:var(--fg2)}
+.why{max-width:640px;color:var(--fg2)}
 
 .badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;border-radius:4px;padding:1px 7px;background:var(--soft);color:var(--fg2);white-space:nowrap;border:1px solid var(--line)}
 .badge.warn{background:#fff;border-color:#111;color:#111;font-weight:500}
