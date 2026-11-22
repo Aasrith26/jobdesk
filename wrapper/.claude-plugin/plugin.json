@@ -1,0 +1,6 @@
+{
+  "name": "jobdesk",
+  "version": "1.0.0",
+  "description": "Live dashboard, Telegram bridge, social and community lead sources, attention queue, answer bank and approval-gated application filling for ai-job-search.",
+  "license": "MIT"
+}

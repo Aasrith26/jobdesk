@@ -1,0 +1,602 @@
+[
+  {
+    "id": "email-h-001",
+    "label": "rejection",
+    "subject": "Staff Nurse application - Westbrook Hospital",
+    "body": "Dear Ms. Varghese,\n\nWe have reviewed your application for the Staff Nurse post and will not be taking it further, as the role requires at least two years of current ICU experience. We thank you for considering Westbrook Hospital.\n\nNursing Recruitment"
+  },
+  {
+    "id": "email-h-002",
+    "label": "rejection",
+    "subject": "Application for Store Manager - Indore",
+    "body": "Dear Mr. Joshi,\n\nThank you for applying for the position of Store Manager. Your profile has not been shortlisted for this position. We will contact you if a suitable opening arises in future.\n\nRegards,\nHR Team"
+  },
+  {
+    "id": "email-h-003",
+    "label": "rejection",
+    "subject": "Outcome of your online test",
+    "body": "Dear Applicant,\n\nThank you for taking the online test for the Probationary Officer recruitment. Your score did not meet the qualifying threshold required to proceed in this cycle. You may apply again after six months.\n\nRecruitment Cell"
+  },
+  {
+    "id": "email-h-004",
+    "label": "rejection",
+    "subject": "Next steps on your application",
+    "body": "Hi Tarun,\n\nThanks for spending time with us over the last few weeks. This was a tough call, but we won't be moving you forward in the process for the Senior Frontend Engineer role. If you'd like brief feedback, just reply and I'll set up 10 minutes.\n\nBest,\nPriya, Recruiting"
+  },
+  {
+    "id": "email-h-005",
+    "label": "other",
+    "subject": "Your offer from Kestrel - please sign by 4 December",
+    "body": "Hi Rachel,\n\nCongratulations again! Your offer for the Senior UX Researcher role is ready to view and sign in our e-signature portal. Base salary is $132,000 with a start date of 11 January 2027. Please sign by 4 December. Reach out if you have any questions.\n\nBest,\nKestrel People Team"
+  },
+  {
+    "id": "email-h-006",
+    "label": "info_request",
+    "subject": "Salary expectations - Senior Analyst",
+    "body": "Hello Fatima,\n\nCould you let me know your salary expectations for the Senior Analyst role, and whether you are looking for a fully remote or hybrid arrangement? This will help me align with the hiring manager.\n\nThank you,\nMark"
+  },
+  {
+    "id": "email-h-007",
+    "label": "rejection",
+    "subject": "Re: Take-home submission",
+    "body": "Hi Meghna,\n\nThank you for the time and care you put into the take-home assignment. After reviewing it, the team has decided not to continue with your candidacy for this role. We appreciate your effort and wish you well.\n\nBest regards,\nEngineering Hiring"
+  },
+  {
+    "id": "email-h-008",
+    "label": "other",
+    "subject": "Open to a new challenge in Amsterdam?",
+    "body": "Hi Diego,\n\nI'm a recruiter working with a fast-growing mobility company in Amsterdam. They're looking for a Senior iOS Engineer (€85-100k, relocation support). It's different from the backend roles you've been applying for, but your Swift experience stood out. Would you like to hear more?\n\nBest,\nFleur"
+  },
+  {
+    "id": "email-h-009",
+    "label": "info_request",
+    "subject": "Your earliest start date",
+    "body": "Hi Lina,\n\nCould you tell us the earliest date you could start if things progress? We're planning team onboarding for January 2027 and want to understand everyone's availability.\n\nBest,\nTom"
+  },
+  {
+    "id": "email-h-010",
+    "label": "other",
+    "subject": "Update: Frontend Engineer position on hold",
+    "body": "Hi Lakshmi,\n\nI wanted to give you an update on the Frontend Engineer role. Due to a change in our planning for next year, we've put this position on hold for now. Your application remains with us, and we'll reach out if and when the role reopens - likely in Q1 2027.\n\nThanks for your patience,\nAnkit"
+  },
+  {
+    "id": "email-h-011",
+    "label": "rejection",
+    "subject": "Decision regarding your application - Assistant Professor",
+    "body": "Dear Dr. Iyer,\n\nThe Selection Committee met on 15 January 2027 and has recommended other candidates for appointment to the post of Assistant Professor (Chemistry). We thank you for appearing before the Committee.\n\nRegistrar"
+  },
+  {
+    "id": "email-h-012",
+    "label": "rejection",
+    "subject": "Update on Senior Data Engineer role",
+    "body": "Dear Ms. Kowalski,\n\nThank you for your interest in the Senior Data Engineer position. We have now reviewed your application and won't be progressing it further at this stage. We appreciate the time you invested and wish you every success.\n\nKind regards,\nRecruitment"
+  },
+  {
+    "id": "email-h-013",
+    "label": "assessment",
+    "subject": "Technical quiz - DevOps Engineer",
+    "body": "Hello Priya,\n\nPlease complete a 30-question multiple-choice quiz covering Linux, Docker, Kubernetes and CI/CD pipelines. The quiz is timed at 40 minutes and must be taken before 18 December. Link and access code below.\n\nThanks,\nPlatform Team Hiring"
+  },
+  {
+    "id": "email-h-014",
+    "label": "interview_invite",
+    "subject": "Quick call?",
+    "body": "Hi Dev,\n\nThanks for getting back to me. Are you free for a 15-minute call tomorrow (Tue 17 Nov) anytime between 2 and 5 PM? I'd like to walk you through the role and hear more about what you're looking for next.\n\nCheers,\nAkash"
+  },
+  {
+    "id": "email-h-015",
+    "label": "other",
+    "subject": "Tell us about your candidate experience",
+    "body": "Hi Sarah,\n\nYou recently went through our hiring process. We'd love your feedback - it takes 3 minutes and helps us improve how we treat candidates. Your responses are anonymous and won't affect any current or future application.\n\nThank you!\nTalent Experience Team"
+  },
+  {
+    "id": "email-h-016",
+    "label": "rejection",
+    "subject": "Thank you from Kestrel Analytics",
+    "body": "Hi Marco,\n\nThank you for applying to Kestrel Analytics. We wanted to let you know that the Business Analyst position has now been filled. We truly appreciate your interest and encourage you to keep an eye on our careers page.\n\nBest,\nThe Kestrel Team"
+  },
+  {
+    "id": "email-h-017",
+    "label": "rejection",
+    "subject": "Your application to Lumenfold",
+    "body": "Hi Akshay,\n\nThank you for taking the time to apply for the Backend Engineer role. After careful consideration, we've decided to move forward with other candidates whose experience more closely matches our current needs. We'll keep your details on file and may reach out if something suitable opens up.\n\nBest wishes,\nLumenfold Talent Team"
+  },
+  {
+    "id": "email-h-018",
+    "label": "info_request",
+    "subject": "Documents required for verification",
+    "body": "Dear Mr. Reddy,\n\nTo proceed with your joining formalities, please share scanned copies of the following by 25 November: PAN card, last three payslips, relieving letter from your previous employer and your highest degree certificate. Please upload them to the HR portal rather than sending over email.\n\nRegards,\nHR Operations"
+  },
+  {
+    "id": "email-h-019",
+    "label": "other",
+    "subject": "Inside Orinox - November 2026 newsletter",
+    "body": "Hello from Orinox!\n\nThis month: we opened our new Pune office, our data team won an industry award, and we're hosting a free webinar on careers in analytics on 10 December. Read about life at Orinox on our blog.\n\nYou're receiving this because you joined our Talent Community."
+  },
+  {
+    "id": "email-h-020",
+    "label": "info_request",
+    "subject": "Last drawn salary proof",
+    "body": "Dear Mr. Shaikh,\n\nAs discussed, please send your last three months' salary slips or a bank statement reflecting salary credits, so that we can finalise the compensation proposal.\n\nRegards,\nHR Team"
+  },
+  {
+    "id": "email-h-021",
+    "label": "interview_invite",
+    "subject": "Hiring manager conversation - Product Designer",
+    "body": "Hi Lucas,\n\nSarah, the hiring manager for our Product Designer opening, would love to connect with you over a 30-minute video call. Could you reply with two or three time slots that work for you between 30 November and 4 December (CET)?\n\nThanks,\nMaria, People Team"
+  },
+  {
+    "id": "email-h-022",
+    "label": "interview_invite",
+    "subject": "Second round: culture and values conversation on 12 January",
+    "body": "Hello Emma,\n\nThank you for your time in the first round. We'd like to invite you to a second-round conversation focused on how you work and what you value in a team. It's scheduled for Tuesday 12 January 2027 at 3:00 PM CET with two of our team leads. A calendar invite will follow.\n\nBest,\nLena, People and Culture"
+  },
+  {
+    "id": "email-h-023",
+    "label": "interview_invite",
+    "subject": "Final stage - London office, 14 January",
+    "body": "Hi Tomasz,\n\nCongratulations on progressing to the final stage for the Product Manager role. We'd like to welcome you to our London office on Thursday 14 January 2027 for four 45-minute conversations with product, engineering, design and our COO. Travel and one night's accommodation will be reimbursed. Please confirm and our coordinator will send the full agenda.\n\nBest wishes,\nClaire"
+  },
+  {
+    "id": "email-h-024",
+    "label": "other",
+    "subject": "Welcome to our Talent Community",
+    "body": "Hi Vivek,\n\nThanks for joining our Talent Community! You'll now receive updates about new openings that match your interests, company news and invitations to hiring events. You can update your preferences or unsubscribe at any time.\n\nThe Careers Team"
+  },
+  {
+    "id": "email-h-025",
+    "label": "info_request",
+    "subject": "GitHub profile",
+    "body": "Hey Ayesha,\n\nI couldn't find your GitHub link on your application. Could you send it over, along with any open-source projects you've contributed to that you'd like us to look at?\n\nThanks!\nEngineering Recruiting"
+  },
+  {
+    "id": "email-h-026",
+    "label": "other",
+    "subject": "Exciting opportunity: Regional Sales Head",
+    "body": "Hi Prakash,\n\nI'm a consultant with an executive search firm. I came across your profile and wanted to reach out about a Regional Sales Head opening with a consumer durables client in Delhi (₹45-55 LPA). I know this is different from the role you applied for elsewhere, but your channel sales experience looks like a great match. Open to a chat?\n\nRegards,\nSuman"
+  },
+  {
+    "id": "email-h-027",
+    "label": "rejection",
+    "subject": "Thanks for your interest in Orinox",
+    "body": "Hi Daniel,\n\nThanks for applying to Orinox Analytics. While your profile is impressive, it isn't the right match for the Analytics Engineer role right now. We hope our paths cross again.\n\nBest,\nOrinox Talent"
+  },
+  {
+    "id": "email-h-028",
+    "label": "assessment",
+    "subject": "Next step: SQL skills check",
+    "body": "Hi Olivia,\n\nWe'd like you to complete a 45-minute SQL skills check on our testing platform. It covers joins, window functions and query optimisation. The link is active until Sunday 22 November.\n\nBest regards,\nData Hiring Team"
+  },
+  {
+    "id": "email-h-029",
+    "label": "other",
+    "subject": "Thank you for applying",
+    "body": "Thank you for applying to the Housekeeping Supervisor role at Seabreeze Resorts. Your application has been submitted successfully. Reference number: SBR-2026-11873.\n\nDo not reply to this email."
+  },
+  {
+    "id": "email-h-030",
+    "label": "rejection",
+    "subject": "Your interview with us",
+    "body": "Dear Kavitha,\n\nThank you for interviewing with us on 2 December. We enjoyed learning about your work. After much deliberation, we've decided to proceed with a candidate whose experience aligns more closely with the immediate needs of the team.\n\nKind regards,\nHiring Team"
+  },
+  {
+    "id": "email-h-031",
+    "label": "assessment",
+    "subject": "Situational judgement test - Graduate Scheme",
+    "body": "Dear Hannah,\n\nThank you for applying to our Graduate Scheme. The next stage is an online situational judgement test, which takes around 30 minutes. Please complete it by 11:59 PM on 3 December 2026. Results will be shared within two weeks.\n\nGraduate Recruitment Team"
+  },
+  {
+    "id": "email-h-032",
+    "label": "assessment",
+    "subject": "Cognitive ability games - next stage of your application",
+    "body": "Hi Chloe,\n\nThe next stage of your application involves a series of short online games that measure problem-solving and attention. It takes about 20 minutes, and you can do it on a laptop or phone. Please complete it by 9 December.\n\nEarly Careers Team"
+  },
+  {
+    "id": "email-h-033",
+    "label": "interview_invite",
+    "subject": "Re: Senior Accountant - meet our CFO",
+    "body": "Hi Gabriela,\n\nThe team was impressed with your conversation yesterday. Our CFO would like to meet you before we make a decision. Would Wednesday 2 December at 9 AM (EST) work? It'll be in person at our Midtown office and should take about 45 minutes.\n\nBest,\nJordan"
+  },
+  {
+    "id": "email-h-034",
+    "label": "rejection",
+    "subject": "Update from the Graduate Scheme team",
+    "body": "Dear Oliver,\n\nThank you for completing the online test for our Graduate Scheme. We're sorry to tell you that you have not been successful at this stage, and your application will now be closed. We encourage you to apply again next year.\n\nGraduate Recruitment"
+  },
+  {
+    "id": "email-h-035",
+    "label": "assessment",
+    "subject": "Record your video responses - Customer Success Associate",
+    "body": "Hi Grace,\n\nThe next step is a short pre-recorded video stage. You'll be shown four questions and have two minutes to record each answer. You can complete it at any time in the next three days from your laptop or phone. Link below.\n\nThanks,\nRecruiting"
+  },
+  {
+    "id": "email-h-036",
+    "label": "interview_invite",
+    "subject": "Book a time with our CTO",
+    "body": "Hi Yusuf,\n\nGreat speaking with you last week. Next up is a conversation with our CTO, Anand, about architecture and the way we build. It's about an hour on Zoom. Grab any open slot here: https://book.example.com/anand-cto. Slots are open until 11 December.\n\nThanks,\nRitika"
+  },
+  {
+    "id": "email-h-037",
+    "label": "assessment",
+    "subject": "Excel assessment - Financial Analyst",
+    "body": "Hi Rohan,\n\nAttached is an Excel file with three tasks: building a simple three-statement model, a variance analysis and a sensitivity table. Please complete it within 2 hours of opening and email it back by Friday 20 November.\n\nThanks,\nFinance Recruiting"
+  },
+  {
+    "id": "email-h-038",
+    "label": "info_request",
+    "subject": "Clarification on employment gap",
+    "body": "Hi Kunal,\n\nThanks for your application. Your CV shows a gap between March 2024 and June 2025. Could you briefly explain what you were doing during that time? There's no wrong answer - we just want the full picture before the next step.\n\nRegards,\nTalent Team"
+  },
+  {
+    "id": "email-h-039",
+    "label": "assessment",
+    "subject": "Complete your work-style questionnaire",
+    "body": "Hello Arjun,\n\nThank you for your application. Before we move forward, we ask all candidates to complete a short work-style questionnaire. It takes about 25 minutes and there are no right or wrong answers. Please complete it by Friday 4 December using the link below.\n\nRegards,\nTalent Team"
+  },
+  {
+    "id": "email-h-040",
+    "label": "assessment",
+    "subject": "German language placement test - Customer Service (DACH)",
+    "body": "Hallo Sven,\n\nFor the Customer Service role covering German-speaking markets, we need to verify your German level. Please complete the 40-minute online language test (reading, listening and a short written task) by 30 November using the link below.\n\nBest regards,\nRecruitment"
+  },
+  {
+    "id": "email-h-041",
+    "label": "interview_invite",
+    "subject": "Loved your portfolio!",
+    "body": "Hey Ishita,\n\nI'm the founder of a small D2C skincare brand and I went through your portfolio last night - really liked the packaging work. Do you have time for a coffee next week to talk about the Marketing Lead role? Our office is in Indiranagar, or we can do a video call if that's easier. Wednesday or Thursday afternoon?\n\nCheers,\nMeera"
+  },
+  {
+    "id": "email-h-042",
+    "label": "other",
+    "subject": "Your profile was viewed 18 times this week",
+    "body": "Hi Mohit,\n\nRecruiters are noticing you! Your profile was viewed 18 times this week and appeared in 64 searches. Profiles with an updated headline get up to 3x more views.\n\nUpdate your profile now."
+  },
+  {
+    "id": "email-h-043",
+    "label": "rejection",
+    "subject": "Application status: Graduate Engineer Trainee",
+    "body": "Dear Candidate,\n\nWe regret to inform you that you have not been selected for the next stage of the Graduate Engineer Trainee recruitment process. We thank you for your interest in our organisation.\n\nHR Department"
+  },
+  {
+    "id": "email-h-044",
+    "label": "interview_invite",
+    "subject": "Your test results - next stage",
+    "body": "Hi Farah,\n\nCongratulations on clearing the online test for the Credit Analyst role - your score was among the top in this cohort. The next stage is a 60-minute discussion with two senior analysts on Tuesday 8 December. Please use the link below to choose a time that suits you.\n\nBest,\nCampus Hiring Team"
+  },
+  {
+    "id": "email-h-045",
+    "label": "interview_invite",
+    "subject": "Next steps - chat with our Engineering Manager",
+    "body": "Hi Ananya,\n\nThanks for applying for the Backend Engineer role. Rohit, our engineering manager, would like to spend 45 minutes with you talking through your experience with distributed systems. Could you pick a slot on Thursday 19 Nov or Friday 20 Nov using this link: https://calendar.example.com/rohit-45? It will be on Google Meet.\n\nBest,\nShruti, Talent Team"
+  },
+  {
+    "id": "email-h-046",
+    "label": "info_request",
+    "subject": "Shift preference",
+    "body": "Hi Pooja,\n\nOur Voice Process team runs morning (7 AM - 4 PM), evening (2 PM - 11 PM) and night (10 PM - 7 AM) shifts. Could you share which shifts you are comfortable with? This will help us place your profile with the right team.\n\nThanks,\nRecruitment"
+  },
+  {
+    "id": "email-h-047",
+    "label": "info_request",
+    "subject": "Work samples - Content Writer",
+    "body": "Hi Neha,\n\nThank you for applying. Could you share three published writing samples, ideally long-form pieces on finance or health topics? Links are fine.\n\nCheers,\nEditorial Lead"
+  },
+  {
+    "id": "email-h-048",
+    "label": "interview_invite",
+    "subject": "Following up on your application - can we connect?",
+    "body": "Hi Sanjana,\n\nI'm the hiring manager for the Program Manager role you applied for. Your experience running rural health programs caught my eye. Would you be open to a conversation on Wednesday 2 December, say 11 AM? Happy to work around your schedule.\n\nRegards,\nVikas Menon"
+  },
+  {
+    "id": "email-h-049",
+    "label": "info_request",
+    "subject": "Location preference",
+    "body": "Hi Siddharth,\n\nWe have openings for this role in both Bengaluru and Hyderabad. Could you tell us which location you'd prefer, and whether you'd be open to the other if needed?\n\nThanks,\nHR"
+  },
+  {
+    "id": "email-h-050",
+    "label": "assessment",
+    "subject": "Case study - Strategy Associate",
+    "body": "Dear Mr. Kulkarni,\n\nPlease find attached the case for the Strategy Associate role. It concerns market entry for a regional cold-chain logistics company. Submit a deck of no more than 10 slides by 2 December, 6 PM IST. Assumptions are allowed but should be stated clearly.\n\nRegards,\nRecruiting Office"
+  },
+  {
+    "id": "email-h-051",
+    "label": "assessment",
+    "subject": "Writing task - Content Writer",
+    "body": "Hi Sameer,\n\nThanks for your interest in the Content Writer role. As a next step, please write a 600-word article on 'Choosing your first health insurance policy' for a first-time buyer audience. Please send it as a Google Doc within 48 hours.\n\nRegards,\nEditorial Team"
+  },
+  {
+    "id": "email-h-052",
+    "label": "other",
+    "subject": "Your application has been withdrawn",
+    "body": "Hi Nadia,\n\nAs requested, we have withdrawn your application for the Marketing Specialist position. If you change your mind, you're welcome to apply again for any of our openings in the future.\n\nBest regards,\nRecruiting Team"
+  },
+  {
+    "id": "email-h-053",
+    "label": "assessment",
+    "subject": "Design exercise for the Product Designer role",
+    "body": "Hi Kenji,\n\nAs discussed, here is the design exercise: rethink the onboarding flow for a pharmacy delivery app (brief attached). Please spend no more than 4 hours on it. We pay ₹5,000 for completed exercises. Share a Figma link by 1 December and we'll review it as a team.\n\nCheers,\nDesign Team"
+  },
+  {
+    "id": "email-h-054",
+    "label": "rejection",
+    "subject": "Re: Marketing Intern",
+    "body": "Hi Riya,\n\nThanks for applying! We've filled all the internship spots for this cohort. Do apply again for the summer batch - applications open in March.\n\nCheers,\nTeam Brightleaf"
+  },
+  {
+    "id": "email-h-055",
+    "label": "other",
+    "subject": "Offer of Employment - Associate Consultant",
+    "body": "Dear Ms. Banerjee,\n\nWe are delighted to offer you the position of Associate Consultant at our Gurugram office, with an annual CTC of ₹14,50,000 and a joining date of 4 January 2027. The detailed offer letter is attached. Please review, sign and return it by 30 November 2026.\n\nWarm regards,\nHuman Resources"
+  },
+  {
+    "id": "email-h-056",
+    "label": "assessment",
+    "subject": "Your CodeTrial invitation from Lumenfold",
+    "body": "Hello,\n\nLumenfold has invited you to complete a CodeTrial test for the position of Backend Developer.\n\nDuration: 120 minutes\nDeadline: 27 Nov 2026, 23:59 IST\n\nClick the button below to start when you are ready. You can attempt the test only once.\n\nCodeTrial Support"
+  },
+  {
+    "id": "email-h-057",
+    "label": "other",
+    "subject": "Hiring update - we'll be in touch in the new year",
+    "body": "Hi Grace,\n\nWe're writing to let you know that our hiring for the Clinical Research Associate role has been paused due to a budget review. No decisions have been made on applications. We expect to restart in late January 2027 and will contact you then.\n\nKind regards,\nClinical Operations"
+  },
+  {
+    "id": "email-h-058",
+    "label": "other",
+    "subject": "Thanks for referring Priya!",
+    "body": "Hi Arun,\n\nThanks for referring Priya Nair for the QA Engineer role. We've received the referral and our team will review her application. You'll be notified of any referral bonus eligibility once she completes 90 days.\n\nTalent Acquisition"
+  },
+  {
+    "id": "email-h-059",
+    "label": "info_request",
+    "subject": "Confirmation of nursing registration number",
+    "body": "Dear Mr. George,\n\nPlease confirm your nursing council registration number and its validity date. We also need a copy of your BLS certificate if you have one.\n\nNursing Administration"
+  },
+  {
+    "id": "email-h-060",
+    "label": "assessment",
+    "subject": "Coding challenge - Software Engineer II",
+    "body": "Hi Rahul,\n\nAs the next step for the Software Engineer II role, please complete our online coding challenge. It consists of three problems and takes about 90 minutes. The link below is valid for 72 hours from now (until 20 Nov, 11:59 PM IST). Make sure you have a stable internet connection before starting.\n\nGood luck!\nEngineering Recruiting"
+  },
+  {
+    "id": "email-h-061",
+    "label": "assessment",
+    "subject": "Typing and grammar test link - International Chat Process",
+    "body": "Dear Applicant,\n\nPlease complete the typing (minimum 30 WPM, 90% accuracy) and English grammar test for the International Chat Process using the link below. The test takes 25 minutes and must be completed by 19 November, 6 PM.\n\nHR Team"
+  },
+  {
+    "id": "email-h-062",
+    "label": "info_request",
+    "subject": "A couple of quick things",
+    "body": "Hi Joseph,\n\nThanks for your interest in the Community Manager role. Could you send us your LinkedIn profile and two or three lines on why this role interests you? We're collecting this from all applicants before shortlisting.\n\nBest,\nAmara"
+  },
+  {
+    "id": "email-h-063",
+    "label": "info_request",
+    "subject": "Please complete the candidate details form",
+    "body": "Dear Candidate,\n\nKindly fill in the attached candidate details form with your personal information, education history, previous employment and emergency contact. Return the completed form by 1 December so we can update our records.\n\nHR Team"
+  },
+  {
+    "id": "email-h-064",
+    "label": "info_request",
+    "subject": "Background verification consent form",
+    "body": "Dear Ms. Pillai,\n\nPlease find attached the background verification consent form. Kindly sign it and return a scanned copy along with your current residential address proof by 27 November.\n\nRegards,\nOnboarding Team"
+  },
+  {
+    "id": "email-h-065",
+    "label": "info_request",
+    "subject": "Quick question about your notice period",
+    "body": "Hi Sneha,\n\nBefore I share your profile with the hiring manager, could you confirm your current CTC, expected CTC and notice period? Also let me know if the notice period is negotiable.\n\nThanks,\nRakesh"
+  },
+  {
+    "id": "email-h-066",
+    "label": "rejection",
+    "subject": "Your candidacy - Operations Lead",
+    "body": "Dear Mr. Haddad,\n\nThank you for participating in our selection process for the Operations Lead role. We have now concluded the process and will not be extending an offer to you on this occasion. Thank you for the thought you put into each conversation.\n\nYours sincerely,\nHuman Resources"
+  },
+  {
+    "id": "email-h-067",
+    "label": "interview_invite",
+    "subject": "Staff Nurse application - meeting with the Nursing Superintendent",
+    "body": "Dear Ms. Thomas,\n\nThank you for applying for the Staff Nurse (Cardiac ICU) position. Our Nursing Superintendent would like to meet you in person on Monday 7 December at 11:00 AM at the hospital administration block, 2nd floor. Please bring your registration certificate and experience letters.\n\nRegards,\nNursing Administration"
+  },
+  {
+    "id": "email-h-068",
+    "label": "assessment",
+    "subject": "Take-home assignment: Marketing Analytics case",
+    "body": "Hi Divya,\n\nThanks again for your time on Tuesday. Attached is a short case study with a sample dataset of campaign performance. Please prepare a brief analysis (slides or a notebook) with your recommendations and send it back by Wednesday 25 November. We expect it to take 3-4 hours.\n\nBest,\nMarketing Team"
+  },
+  {
+    "id": "email-h-069",
+    "label": "interview_invite",
+    "subject": "Schedule your virtual interview - Warehouse Supervisor",
+    "body": "Hi Carlos,\n\nThanks for applying for the Warehouse Supervisor position at our Reno facility. Please use the scheduling link below to pick a time for your virtual interview with the site manager. Available dates run from 18 to 25 November.\n\nThank you,\nTalent Acquisition"
+  },
+  {
+    "id": "email-h-070",
+    "label": "assessment",
+    "subject": "Reminder: your test link expires in 24 hours",
+    "body": "Hi Abhishek,\n\nThis is a reminder that you have not yet started the online test for the QA Engineer role. Your link expires tomorrow at 11:59 PM IST. If you've already completed it, please ignore this message.\n\nRecruiting Ops"
+  },
+  {
+    "id": "email-h-071",
+    "label": "rejection",
+    "subject": "Re: Product Manager - Payments",
+    "body": "Hi Neel,\n\nThanks so much for the conversations last week - the team really enjoyed meeting you. We've decided to go with another candidate for this role whose background in lending was a closer fit. I'd love to stay in touch, and I'll reach out directly if a role opens up that fits you better.\n\nWarmly,\nAnita"
+  },
+  {
+    "id": "email-h-072",
+    "label": "other",
+    "subject": "You're invited: Virtual Careers Fair, 5 December",
+    "body": "Hi there,\n\nJoin us for our Virtual Careers Fair on Saturday 5 December 2026, 11 AM - 4 PM IST. Meet recruiters from 40+ companies across tech, healthcare and finance, attend resume clinics and panel discussions. Registration is free.\n\nSee you there!\nEvents Team"
+  },
+  {
+    "id": "email-h-073",
+    "label": "info_request",
+    "subject": "Reference contacts needed",
+    "body": "Hi Ben,\n\nWe're getting close to the end of the process. Could you send us the names and contact details of two professional referees, ideally including a recent line manager? We won't contact them without letting you know first.\n\nBest,\nSophie"
+  },
+  {
+    "id": "email-h-074",
+    "label": "other",
+    "subject": "Reset your careers portal password",
+    "body": "Hello,\n\nWe received a request to reset the password for your candidate account. Click the link below to choose a new password. This link expires in 30 minutes. If you didn't request this, you can safely ignore this email."
+  },
+  {
+    "id": "email-h-075",
+    "label": "assessment",
+    "subject": "Clinical knowledge test - Staff Nurse (ICU)",
+    "body": "Dear Ms. Jacob,\n\nAs part of the selection process for Staff Nurse (ICU), you are required to take an online clinical knowledge test of 50 multiple-choice questions. Please log in between 9 AM and 5 PM on 26 November using the credentials below. Duration: 60 minutes.\n\nNursing Recruitment Cell"
+  },
+  {
+    "id": "email-h-076",
+    "label": "rejection",
+    "subject": "Closing the loop",
+    "body": "Hi Stefan,\n\nI wanted to close the loop with you on the Staff Engineer position. We've made a hire and are wrapping up the search. Thank you for your patience throughout the process, and best of luck with what comes next.\n\nCheers,\nOlivia"
+  },
+  {
+    "id": "email-h-077",
+    "label": "info_request",
+    "subject": "Right to work documentation",
+    "body": "Dear Ms. Nwosu,\n\nAs part of our pre-employment checks, please provide your right to work share code and date of birth so we can complete the online verification. Please reply by Friday 4 December.\n\nKind regards,\nPeople Operations"
+  },
+  {
+    "id": "email-h-078",
+    "label": "other",
+    "subject": "We've received your application",
+    "body": "Hi Ravi,\n\nThanks for applying for the Operations Analyst position at Northfield Retail. This is an automated message to confirm that we've received your application. Our team will review it, and if your profile matches our requirements, someone will be in touch.\n\nPlease do not reply to this email."
+  },
+  {
+    "id": "email-h-079",
+    "label": "other",
+    "subject": "Free webinar: Writing a resume that gets read",
+    "body": "Hi Jobseeker,\n\nStruggling to get callbacks? Join our free 45-minute webinar on Thursday 26 November at 7 PM IST, where senior recruiters share what they look for in a resume. Save your seat below.\n\nCareer Resources Team"
+  },
+  {
+    "id": "email-h-080",
+    "label": "info_request",
+    "subject": "Portfolio link",
+    "body": "Hi Aarav,\n\nThe attachment you sent with your application didn't open on our end. Could you share a link to your portfolio instead (Behance, Dribbble or a personal site)?\n\nThanks!\nDesign Hiring"
+  },
+  {
+    "id": "email-h-081",
+    "label": "assessment",
+    "subject": "Assignment for the Data Science Intern position",
+    "body": "Hi Karan,\n\nPlease find the assignment for the Data Science Internship attached. You'll be working with a dataset of retail transactions to build a simple demand-forecasting model. Submit your notebook and a one-page summary by 7 January 2027.\n\nBest,\nData Science Team"
+  },
+  {
+    "id": "email-h-082",
+    "label": "interview_invite",
+    "subject": "Technical round scheduled - 24 Nov 2026, 3:00 PM IST",
+    "body": "Dear Pranav,\n\nYour technical round for the Android Developer role has been scheduled for Tuesday, 24 November 2026 at 3:00 PM IST with two members of our mobile team. The Microsoft Teams link is below. Please keep your IDE handy as you may be asked to walk through some code. Kindly confirm your attendance by replying to this email.\n\nRegards,\nHR Team, Corvane Technologies"
+  },
+  {
+    "id": "email-h-083",
+    "label": "assessment",
+    "subject": "SpeakRight spoken English test - Voice Process",
+    "body": "Dear Applicant,\n\nYou are required to take the SpeakRight automated spoken English test for the Voice Process role. You will receive a call from our system at your registered number; speak clearly in response to the prompts. The test takes 15 minutes and must be completed by 16 January 2027.\n\nRecruitment Team"
+  },
+  {
+    "id": "email-h-084",
+    "label": "info_request",
+    "subject": "Work authorization question",
+    "body": "Hi Wei,\n\nThank you for applying for the Data Scientist position. Will you now or in the future require employer sponsorship to work in the United States? Please also confirm your current visa status.\n\nBest regards,\nTalent Acquisition"
+  },
+  {
+    "id": "email-h-085",
+    "label": "interview_invite",
+    "subject": "Video call with our Head of Operations",
+    "body": "Dear Mr. Banerjee,\n\nFollowing your application for the Logistics Coordinator position, our Head of Operations would like to speak with you via video call on Friday 27 November at 4:00 PM IST. The call will last around 40 minutes. Please confirm whether this time works for you.\n\nBest regards,\nTalent Acquisition"
+  },
+  {
+    "id": "email-h-086",
+    "label": "info_request",
+    "subject": "Updated CV please",
+    "body": "Hi Manoj,\n\nThe CV on your profile seems to be from 2023. Could you send us your latest CV, including your current role at the logistics company?\n\nThanks,\nRecruitment Desk"
+  },
+  {
+    "id": "email-h-087",
+    "label": "other",
+    "subject": "Application status: Under review",
+    "body": "Dear Applicant,\n\nYour application for the Assistant Manager - Supply Chain role (Job ID 48213) is currently under review. You can track the status of your application at any time by logging in to the careers portal.\n\nThis is a system-generated email."
+  },
+  {
+    "id": "email-h-088",
+    "label": "rejection",
+    "subject": "Regarding your application",
+    "body": "Dear Ms. Sato,\n\nThank you for your interest in the Logistics Planner role. Unfortunately, we are unable to offer you the position at this time. We wish you the best in your career.\n\nSincerely,\nHR Team"
+  },
+  {
+    "id": "email-h-089",
+    "label": "interview_invite",
+    "subject": "Call Letter - Personal Interview for the post of Probationary Officer",
+    "body": "Dear Candidate,\n\nWith reference to your application and performance in the main examination, you are called for a Personal Interview on 09 December 2026 at 09:30 AM at the Zonal Office, Hazratganj, Lucknow. Please bring this call letter, original certificates, a photo ID and two passport-size photographs.\n\nChief Manager (HR)"
+  },
+  {
+    "id": "email-h-090",
+    "label": "interview_invite",
+    "subject": "Selection Committee meeting - Assistant Professor (Economics)",
+    "body": "Dear Dr. Raghavan,\n\nYou are invited to appear before the Selection Committee for the post of Assistant Professor (Economics) on 6 January 2027 at 10:00 AM in the Senate Hall. Candidates will make a 15-minute presentation on their research followed by questions from the committee. Kindly bring all original documents.\n\nRegistrar"
+  },
+  {
+    "id": "email-h-091",
+    "label": "other",
+    "subject": "Joining instructions - Day 1 at Northfield",
+    "body": "Dear Kiran,\n\nWe're excited to welcome you on Monday 4 January 2027. Please report to the 5th floor reception at 9:30 AM. Your laptop and access card will be handed over during induction. Lunch will be with your team.\n\nSee you soon!\nOnboarding Team"
+  },
+  {
+    "id": "email-h-092",
+    "label": "info_request",
+    "subject": "Missing information in your application",
+    "body": "Dear Applicant,\n\nYour application for the Junior Research Fellow position is incomplete. Please upload your M.Sc mark sheets for all semesters and your valid fellowship qualification certificate to the portal by 30 November 2026.\n\nProject Office"
+  },
+  {
+    "id": "email-h-093",
+    "label": "interview_invite",
+    "subject": "HR round - Saturday 21 Nov",
+    "body": "Dear Candidate,\n\nYou are requested to report for the HR round for the Customer Support Executive role at our Sector 18 office, Noida, on Saturday 21 November at 10:00 AM. Please carry a copy of your resume and an ID proof. Ask for Ms. Pooja at the reception.\n\nRegards,\nHR Department"
+  },
+  {
+    "id": "email-h-094",
+    "label": "rejection",
+    "subject": "Your application - Data Analyst",
+    "body": "Dear Applicant,\n\nWe received a very high number of applications for the Data Analyst position and have selected other applicants for the next stage. Thank you for your interest in working with us.\n\nRecruitment Team"
+  },
+  {
+    "id": "email-h-095",
+    "label": "interview_invite",
+    "subject": "Come meet the team at Kestrel Analytics",
+    "body": "Hi Joel,\n\nWe enjoyed reading your application and would love to host you at our Whitefield office on Thursday 3 December at 10:30 AM. You'll spend about two hours with three people from the analytics team, followed by lunch. Please bring a photo ID for the visitor desk and let me know if you need parking.\n\nWarm regards,\nNandini"
+  },
+  {
+    "id": "email-h-096",
+    "label": "other",
+    "subject": "12 new Data Analyst jobs in Hyderabad",
+    "body": "Hi Anjali,\n\nHere are today's jobs matching your alert 'Data Analyst, Hyderabad':\n- Data Analyst, Orinox Analytics - 3-5 yrs\n- Business Data Analyst, a fintech startup - 2-4 yrs\n- Junior Analyst, retail chain - 0-2 yrs\n...and 9 more.\n\nView all jobs | Manage alerts | Unsubscribe"
+  },
+  {
+    "id": "email-h-097",
+    "label": "rejection",
+    "subject": "Following up - Customer Success Manager",
+    "body": "Hi Emily,\n\nI wanted to follow up on your application for the Customer Success Manager role. We've chosen to pursue candidates with more enterprise SaaS experience for this position. Thank you for your interest - we wish you the very best in your search.\n\nRegards,\nJames"
+  },
+  {
+    "id": "email-h-098",
+    "label": "interview_invite",
+    "subject": "Interview Invitation: Data Analyst, Northfield Retail",
+    "body": "Dear Aisha,\n\nWe are pleased to invite you to an interview for the Data Analyst position at Northfield Retail. The interview will take place on Monday 30 November 2026 at 2:00 PM via Microsoft Teams and will last approximately one hour. Please let us know if you require any adjustments.\n\nKind regards,\nRecruitment Team"
+  },
+  {
+    "id": "email-h-099",
+    "label": "interview_invite",
+    "subject": "Phone screen - Senior Accountant",
+    "body": "Hello Mr. Okafor,\n\nThank you for your interest in the Senior Accountant position. I'd like to set up a 20-minute phone screen to learn more about your background. Are you available on Monday 23 November between 2 and 4 PM GMT? If not, please suggest a couple of alternatives.\n\nKind regards,\nHelen Marsh, Recruitment"
+  },
+  {
+    "id": "email-h-100",
+    "label": "assessment",
+    "subject": "Online aptitude test - Graduate Trainee 2027",
+    "body": "Dear Candidate,\n\nYou are shortlisted for the online aptitude test for the Graduate Trainee Program 2027, scheduled on 28 November 2026. The test is proctored and requires a laptop with a working webcam. Login credentials will be sent 24 hours before the test. Sections: quantitative, logical reasoning and verbal ability.\n\nCampus Recruitment Team"
+  }
+]

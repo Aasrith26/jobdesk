@@ -1,0 +1,137 @@
+{
+  "note": "Dry runs only, test identity, generic answer bank. See tests/benchmark-forms.ts.",
+  "summary": {
+    "forms": 10,
+    "ran": 9,
+    "kit_only": 0,
+    "filled_ok": 99,
+    "failed_flagged": 9,
+    "unknown_to_user": 34,
+    "sourceless": 0,
+    "submitted": 0,
+    "pooled_coverage": 0.6971830985915493,
+    "pooled_correctness_of_attempts": 0.9166666666666666
+  },
+  "results": [
+    {
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/8153017",
+      "status": "dry_run_done",
+      "seconds": 17,
+      "filled_ok": 13,
+      "failed": 1,
+      "unknown": 1,
+      "stops": 2,
+      "coverage": 0.8666666666666667,
+      "correctness": 0.9285714285714286,
+      "sourceless": 0
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/robinhood/jobs/6669758",
+      "status": "dry_run_done",
+      "seconds": 16,
+      "filled_ok": 12,
+      "failed": 1,
+      "unknown": 7,
+      "stops": 2,
+      "coverage": 0.6,
+      "correctness": 0.9230769230769231,
+      "sourceless": 0
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/twitch/jobs/8872835002",
+      "status": "dry_run_done",
+      "seconds": 14,
+      "filled_ok": 10,
+      "failed": 2,
+      "unknown": 12,
+      "stops": 1,
+      "coverage": 0.4166666666666667,
+      "correctness": 0.8333333333333334,
+      "sourceless": 0
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/gusto/jobs/8353774",
+      "status": "dry_run_done",
+      "seconds": 12,
+      "filled_ok": 11,
+      "failed": 0,
+      "unknown": 9,
+      "stops": 0,
+      "coverage": 0.55,
+      "correctness": 1,
+      "sourceless": 0
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/PostHog/db808740-242e-4a40-ad43-d41f26c049d7",
+      "status": "dry_run_done",
+      "seconds": 15,
+      "filled_ok": 0,
+      "failed": 0,
+      "unknown": 0,
+      "stops": 0,
+      "coverage": null,
+      "correctness": null,
+      "sourceless": 0
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/supabase/a0b46de3-5617-41cc-8623-2be9b6fd6b49",
+      "status": "dry_run_done",
+      "seconds": 3,
+      "filled_ok": 7,
+      "failed": 0,
+      "unknown": 2,
+      "stops": 0,
+      "coverage": 0.7777777777777778,
+      "correctness": 1,
+      "sourceless": 0
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/replit/659a8e1e-69ba-44c0-a632-96665051a3e8",
+      "status": "dry_run_done",
+      "seconds": 6,
+      "filled_ok": 8,
+      "failed": 1,
+      "unknown": 1,
+      "stops": 0,
+      "coverage": 0.8,
+      "correctness": 0.8888888888888888,
+      "sourceless": 0
+    },
+    {
+      "url": "https://jobs.lever.co/shieldai/082808e5-5e3b-4189-9034-3ebd69d8c0dc",
+      "status": "dry_run_done",
+      "seconds": 7,
+      "filled_ok": 11,
+      "failed": 2,
+      "unknown": 0,
+      "stops": 1,
+      "coverage": 0.8461538461538461,
+      "correctness": 0.8461538461538461,
+      "sourceless": 0
+    },
+    {
+      "url": "https://jobs.lever.co/zoox/8befaec7-bb9f-4cf3-a48c-46b5e3886bf3",
+      "status": "dry_run_done",
+      "seconds": 4,
+      "filled_ok": 12,
+      "failed": 1,
+      "unknown": 1,
+      "stops": 1,
+      "coverage": 0.8571428571428571,
+      "correctness": 0.9230769230769231,
+      "sourceless": 0
+    },
+    {
+      "url": "https://jobs.lever.co/tala/848e6f75-9b40-45d2-b5b8-82de6670b0ed",
+      "status": "dry_run_done",
+      "seconds": 4,
+      "filled_ok": 15,
+      "failed": 1,
+      "unknown": 1,
+      "stops": 1,
+      "coverage": 0.8823529411764706,
+      "correctness": 0.9375,
+      "sourceless": 0
+    }
+  ]
+}

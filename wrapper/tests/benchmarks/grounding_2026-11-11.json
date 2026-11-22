@@ -1,0 +1,251 @@
+{
+  "summary": {
+    "postings": 30,
+    "drafted": 27,
+    "refused": 3,
+    "drafts_with_unsupported_claims": 0,
+    "note": "After the 'dates as written, no computed durations' rule; the 2 affected Meera Iyer postings were re-run (first run: 1 computed-duration claim, 1 unreadable judge reply)."
+  },
+  "rows": [
+    {
+      "persona": "Lakshmi Devi",
+      "posting": "Staff Nurse @ Nextenti Tech Private Limited",
+      "drafted": true,
+      "refused": null,
+      "words": 70,
+      "unsupported": []
+    },
+    {
+      "persona": "Lakshmi Devi",
+      "posting": "Associate staff nurse @ Nextenti Tech Private Limited",
+      "drafted": true,
+      "refused": null,
+      "words": 54,
+      "unsupported": []
+    },
+    {
+      "persona": "Lakshmi Devi",
+      "posting": "STAFF NURSE FEMAL @ ABM HOSPITAL",
+      "drafted": true,
+      "refused": null,
+      "words": 63,
+      "unsupported": []
+    },
+    {
+      "persona": "Lakshmi Devi",
+      "posting": "Staff Nurse - ICU @ medbizz consultancy services",
+      "drafted": true,
+      "refused": null,
+      "words": 65,
+      "unsupported": []
+    },
+    {
+      "persona": "Lakshmi Devi",
+      "posting": "Opening for Staff Nurse,Male Nurse,Female Nurse,GNM,DGNM & ANM Grad @ ACHIEVERS SPOT Hiring For Medical Coding",
+      "drafted": true,
+      "refused": null,
+      "words": 52,
+      "unsupported": []
+    },
+    {
+      "persona": "Lakshmi Devi",
+      "posting": "Opening for Staff Nurse,Male Nurse,Female Nurse,GNM,ANM & DGNM @ ACHIEVERS SPOT Hiring For MEDICAL CODING",
+      "drafted": true,
+      "refused": null,
+      "words": 67,
+      "unsupported": []
+    },
+    {
+      "persona": "Lakshmi Devi",
+      "posting": "Wanted Staff Nurse,Male Nurse,Female Nurse,GNM,DGNM & ANM Grad @ ACHIEVERS SPOT Hiring For Medical Coding",
+      "drafted": true,
+      "refused": null,
+      "words": 56,
+      "unsupported": []
+    },
+    {
+      "persona": "Lakshmi Devi",
+      "posting": "Opening for Staff Nurse,GNM,DGNM,ANM & Midwifery Graduates @ ACHIEVERS SPOT Hiring For Medical Coding",
+      "drafted": true,
+      "refused": null,
+      "words": 57,
+      "unsupported": []
+    },
+    {
+      "persona": "Lakshmi Devi",
+      "posting": "Staff Nurse @ CIPHER Oncology Pvt. Ltd.",
+      "drafted": true,
+      "refused": null,
+      "words": 68,
+      "unsupported": []
+    },
+    {
+      "persona": "Lakshmi Devi",
+      "posting": "Wanted Staff Nurse,Male Nurse,Female Nurse,GNM,DGNM and ANM Grad @ Achievers Spot",
+      "drafted": true,
+      "refused": null,
+      "words": 61,
+      "unsupported": []
+    },
+    {
+      "persona": "Ramesh Yadav",
+      "posting": "Team Lead-Lucknow @ Blitz",
+      "drafted": true,
+      "refused": null,
+      "words": 65,
+      "unsupported": []
+    },
+    {
+      "persona": "Ramesh Yadav",
+      "posting": "Operations Executive: LTS @ Blue Dart",
+      "drafted": true,
+      "refused": null,
+      "words": 63,
+      "unsupported": []
+    },
+    {
+      "persona": "Ramesh Yadav",
+      "posting": "Logistics Supervisor Jobs in Jyoti Enterprise - Lucknow, Uttar Pradesh @ VIHU",
+      "drafted": true,
+      "refused": null,
+      "words": 58,
+      "unsupported": []
+    },
+    {
+      "persona": "Ramesh Yadav",
+      "posting": "Team Lead - AMZL , Team Lead @ Amazon",
+      "drafted": false,
+      "refused": "I couldn't write a message using only facts from your profile (it kept adding: worked on continuously improving the delivery process / process improvement experience; Executing the delivery process from station to customer address). Add those facts to your profile if they're true.",
+      "words": 0,
+      "unsupported": []
+    },
+    {
+      "persona": "Ramesh Yadav",
+      "posting": "Warehouse Manager @ Bask HR Consulting Pvt. Ltd.",
+      "drafted": true,
+      "refused": null,
+      "words": 58,
+      "unsupported": []
+    },
+    {
+      "persona": "Ramesh Yadav",
+      "posting": "Warehouse Manager @ Vashi Integrated",
+      "drafted": true,
+      "refused": null,
+      "words": 64,
+      "unsupported": []
+    },
+    {
+      "persona": "Ramesh Yadav",
+      "posting": "Warehouse Executive @ Talish Solutions",
+      "drafted": true,
+      "refused": null,
+      "words": 57,
+      "unsupported": []
+    },
+    {
+      "persona": "Ramesh Yadav",
+      "posting": "Logistics Supervisor @ RAJPUT PROTECTION SERVICE PRIVATE LIMITED",
+      "drafted": true,
+      "refused": null,
+      "words": 64,
+      "unsupported": []
+    },
+    {
+      "persona": "Ramesh Yadav",
+      "posting": "AGM - Warehouse & Logistics @ Vodafone Idea Limited",
+      "drafted": true,
+      "refused": null,
+      "words": 60,
+      "unsupported": []
+    },
+    {
+      "persona": "Ramesh Yadav",
+      "posting": "Team Lead , Last Mile ACES @ Amazon",
+      "drafted": false,
+      "refused": "I couldn't write a message using only facts from your profile (it kept adding: familiar with the pace of high-volume last-mile operations; hands-on coordination of shift operations; tracking delivery execution). Add those facts to your profile if they're true.",
+      "words": 0,
+      "unsupported": []
+    },
+    {
+      "persona": "Meera Iyer",
+      "posting": "Customer Care Associate - US @ BrightCHAMPS",
+      "drafted": true,
+      "refused": null,
+      "words": 54,
+      "unsupported": []
+    },
+    {
+      "persona": "Meera Iyer",
+      "posting": "Customer Service Representative @ Best Buy",
+      "drafted": true,
+      "refused": null,
+      "words": 66,
+      "unsupported": []
+    },
+    {
+      "persona": "Meera Iyer",
+      "posting": "Customer Service Representative @ Amazon",
+      "drafted": true,
+      "refused": null,
+      "words": 62,
+      "unsupported": []
+    },
+    {
+      "persona": "Meera Iyer",
+      "posting": "Customer Service Representative @ NLB Services",
+      "drafted": true,
+      "refused": null,
+      "words": 79,
+      "unsupported": []
+    },
+    {
+      "persona": "Meera Iyer",
+      "posting": "CUSTOMER SUPPORT - BANKING @ PERSONAL NETWORK.",
+      "drafted": true,
+      "refused": null,
+      "words": 63,
+      "unsupported": []
+    },
+    {
+      "persona": "Meera Iyer",
+      "posting": "CUSTOMER SUPPORT (HEBREW LANG) @ PERSONAL NETWORK.",
+      "drafted": false,
+      "refused": "This post doesn't look like a real hiring need, so no message was drafted.",
+      "words": 0,
+      "unsupported": []
+    },
+    {
+      "persona": "Meera Iyer",
+      "posting": "Customer Support @ The Job Factory",
+      "drafted": true,
+      "refused": null,
+      "words": 62,
+      "unsupported": []
+    },
+    {
+      "persona": "Meera Iyer",
+      "posting": "Customer Support - BANKING & PAYMENTS @ PERSONAL NETWORK.",
+      "drafted": true,
+      "refused": null,
+      "words": 64,
+      "unsupported": []
+    },
+    {
+      "persona": "Meera Iyer",
+      "posting": "Customer Support Executive @ BETSOL",
+      "drafted": true,
+      "refused": null,
+      "words": 60,
+      "unsupported": []
+    },
+    {
+      "persona": "Meera Iyer",
+      "posting": "Customer Support Representative @ Lyros Technologies Pvt Ltd-CMMI Level 3",
+      "drafted": true,
+      "refused": null,
+      "words": 74,
+      "unsupported": []
+    }
+  ]
+}

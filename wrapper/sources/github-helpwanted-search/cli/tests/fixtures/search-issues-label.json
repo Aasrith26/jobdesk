@@ -1,0 +1,137 @@
+{
+ "total_count": 3711,
+ "incomplete_results": false,
+ "items": [
+  {
+   "html_url": "https://github.com/cvas22/docxforge/issues/77",
+   "repository_url": "https://api.github.com/repos/cvas22/docxforge",
+   "number": 77,
+   "title": "Supported Python Versions",
+   "state": "open",
+   "comments": 0,
+   "created_at": "2026-11-09T04:31:02Z",
+   "updated_at": "2026-11-09T04:31:02Z",
+   "body": "Copied from python-docx-template issue 495, opened by `@aronbierbaum` on 2023-05-11.\n\n---\n\n## Describe your problem\r\nI'm considering submitting a few pull requests. One would be to add more type hints, and the second would be to add basic asyncio support. Before I start though I want to know what versions of Python must be supported? `setup.py` indicates support for Python 2.7 and 3.4, but the usage of the `typing` module in `template.py` makes me think only Python 3.5+ are supported. As you are",
+   "labels": [
+    {
+     "name": "help wanted"
+    }
+   ],
+   "user": {
+    "login": "cvas22"
+   }
+  },
+  {
+   "html_url": "https://github.com/Douglas-Strey/repolens-cli/issues/7",
+   "repository_url": "https://api.github.com/repos/Douglas-Strey/repolens-cli",
+   "number": 7,
+   "title": "Python support",
+   "state": "open",
+   "comments": 0,
+   "created_at": "2026-10-20T20:32:20Z",
+   "updated_at": "2026-10-20T20:41:55Z",
+   "body": "Today Python projects only get file counts, Makefile/justfile targets, CI and the generic\nchecks. Bring Python to the level of the JavaScript and Go support, as a series of PRs:\nstart with detection, add routes after.\n\n**Scope**\n- Package managers and lockfiles: uv (`uv.lock`), Poetry, Pipenv, pip (`requirements*.txt`)\n- Runtime version: `.python-version`, `requires-python`, `.tool-versions`\n- Frameworks: Django, Flask, FastAPI\n- Routes: FastAPI/Flask decorators, Django `urls.py`\n- Environment v",
+   "labels": [
+    {
+     "name": "help wanted"
+    },
+    {
+     "name": "roadmap"
+    },
+    {
+     "name": "size: L"
+    },
+    {
+     "name": "area: languages"
+    }
+   ],
+   "user": {
+    "login": "Douglas-Strey"
+   }
+  },
+  {
+   "html_url": "https://github.com/patsypppe/meridian/issues/31",
+   "repository_url": "https://api.github.com/repos/patsypppe/meridian",
+   "number": 31,
+   "title": "Support Python 3.14",
+   "state": "open",
+   "comments": 0,
+   "created_at": "2026-11-04T18:14:04Z",
+   "updated_at": "2026-11-07T23:18:48Z",
+   "body": "### Context\n\n`requires-python = \">=3.12,<3.14\"` in `pyproject.toml` rules out Python 3.14, so `pip install meridian-eval` refuses to install on it.\n\n### What to do\n\nLift the upper bound, add 3.14 to the CI matrix in `.github/workflows/ci.yml` (the `static` job already runs 3.12 and 3.13), and fix whatever breaks.\n\n### Done when\n\nCI is green on 3.12, 3.13 and 3.14, and the PyPI classifiers list 3.14.\n\n### Where to look\n\n`pyproject.toml`, `.github/workflows/ci.yml`\n\n---\nNew here? Read [CONTRIBUTIN",
+   "labels": [
+    {
+     "name": "enhancement"
+    },
+    {
+     "name": "help wanted"
+    },
+    {
+     "name": "size: S"
+    },
+    {
+     "name": "area: packaging"
+    }
+   ],
+   "user": {
+    "login": "patsypppe"
+   }
+  },
+  {
+   "html_url": "https://github.com/andrewsiah/agentswarm-data-tasks/issues/131",
+   "repository_url": "https://api.github.com/repos/andrewsiah/agentswarm-data-tasks",
+   "number": 131,
+   "title": "Fix last match in Python",
+   "state": "open",
+   "comments": 0,
+   "created_at": "2026-11-11T00:55:04Z",
+   "updated_at": "2026-11-11T00:55:08Z",
+   "body": "# last-match\nImplement `last_match` in `last_match.py`. Python 3.11+ standard library only.\n\nFix the seeded implementation. items is an exact built-in list of at most 1000 exact built-in strings, each at most 64 Unicode code points. target is an exact built-in string of at most 64 code points. Return the last matching zero-based index as an exact int, or None if absent. Equality is literal: no trimming, normalization or case folding.\n\nReject bool and all subclasses, including nested values, with",
+   "labels": [
+    {
+     "name": "help wanted"
+    },
+    {
+     "name": "good first issue"
+    },
+    {
+     "name": "up-for-grabs"
+    },
+    {
+     "name": "python"
+    }
+   ],
+   "user": {
+    "login": "andrewsiah"
+   }
+  },
+  {
+   "html_url": "https://github.com/andrewsiah/agentswarm-data-tasks/issues/109",
+   "repository_url": "https://api.github.com/repos/andrewsiah/agentswarm-data-tasks",
+   "number": 109,
+   "title": "Implement sum odd in Python",
+   "state": "open",
+   "comments": 0,
+   "created_at": "2026-11-10T16:55:05Z",
+   "updated_at": "2026-11-10T16:55:09Z",
+   "body": "# sum-odd\nImplement `sum_odd` in `sum_odd.py`. Python 3.11+ standard library only.\n\nInput values is an exact built-in list of at most 1000 exact built-in ints in [-1000000000,1000000000]. Return the exact int sum of odd values (including negative values and duplicates); empty input returns 0. Output sums may exceed the input magnitude bound.\n\nReject bool and all subclasses, including nested values, with exact TypeError. Validate ALL types first; bounds violations then raise exact ValueError. Exc",
+   "labels": [
+    {
+     "name": "help wanted"
+    },
+    {
+     "name": "good first issue"
+    },
+    {
+     "name": "up-for-grabs"
+    },
+    {
+     "name": "python"
+    }
+   ],
+   "user": {
+    "login": "andrewsiah"
+   }
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+  "nbHits": 9,
+  "nbPages": 1,
+  "page": 0,
+  "hitsPerPage": 1000,
+  "hits": [
+    {
+      "objectID": "9000001",
+      "author": "alice",
+      "created_at": "2026-11-02T16:10:00Z",
+      "created_at_i": 1793635800,
+      "parent_id": 9000000,
+      "story_id": 9000000,
+      "comment_text": "Acme Voice (YC W26) | Senior AI Engineer, Voice Agents | REMOTE (Worldwide) | Full-time | $120k–$180k + equity | <a href=\"https:&#x2F;&#x2F;acme.example&#x2F;jobs\" rel=\"nofollow\">https:&#x2F;&#x2F;acme.example&#x2F;jobs</a><p>We build real-time voice agents on vLLM &amp; WebRTC.<p>Apply via the link above."
+    },
+    {
+      "objectID": "9000002",
+      "author": "bob",
+      "created_at": "2026-11-02T17:00:00Z",
+      "created_at_i": 1793638800,
+      "parent_id": 9000000,
+      "story_id": 9000000,
+      "comment_text": "Globex | ML Platform Engineer | Remote (US only) | Full-time | $200K<p>LLM serving infrastructure. Must be located in the United States."
+    },
+    {
+      "objectID": "9000003",
+      "author": "carol",
+      "created_at": "2026-11-03T09:00:00Z",
+      "created_at_i": 1793696400,
+      "parent_id": 9000000,
+      "story_id": 9000000,
+      "comment_text": "Initech | Backend Engineer (RAG) | Bengaluru, India | ONSITE | Full-time<p>Retrieval-augmented generation for enterprise search."
+    },
+    {
+      "objectID": "9000004",
+      "author": "dave",
+      "created_at": "2026-11-03T10:00:00Z",
+      "created_at_i": 1793700000,
+      "parent_id": 9000000,
+      "story_id": 9000000,
+      "comment_text": "Umbrella Labs | Inference Engineer | REMOTE | Full-time<p>Optimise LLM inference kernels. Fully async team."
+    },
+    {
+      "objectID": "9000005",
+      "author": "erin",
+      "created_at": "2026-11-03T11:00:00Z",
+      "created_at_i": 1793703600,
+      "parent_id": 9000000,
+      "story_id": 9000000,
+      "comment_text": "Hooli | Staff Engineer | Remote | Full-time<p>Distributed systems. Candidates must be based in the EU and work CET business hours."
+    },
+    {
+      "objectID": "9000006",
+      "author": "frank",
+      "created_at": "2026-11-04T08:00:00Z",
+      "created_at_i": 1793779200,
+      "parent_id": 9000000,
+      "story_id": 9000000,
+      "comment_text": "Location: Pune, India\nRemote: Yes\nWilling to relocate: No\nTechnologies: Python<p>Looking for work."
+    },
+    {
+      "objectID": "9000007",
+      "author": "grace",
+      "created_at": "2026-11-04T09:00:00Z",
+      "created_at_i": 1793782800,
+      "parent_id": 9000000,
+      "story_id": 9000000,
+      "comment_text": "Data Scientist\nHybrid, 2 days in office\nSingapore\nFull-time<p>Forecasting team at a logistics company."
+    },
+    {
+      "objectID": "9000008",
+      "author": "heidi",
+      "created_at": "2026-11-04T10:00:00Z",
+      "created_at_i": 1793786400,
+      "parent_id": 9000000,
+      "story_id": 9000000,
+      "comment_text": "Vandelay | Product Engineer | REMOTE (Worldwide: US &#x2F; Canada &#x2F; Europe) | Full-time<p>Import&#x2F;export tooling."
+    },
+    {
+      "objectID": "9000009",
+      "author": "ivan",
+      "created_at": "2026-11-04T11:00:00Z",
+      "created_at_i": 1793790000,
+      "parent_id": 9000001,
+      "story_id": 9000000,
+      "comment_text": "Is this role open to candidates in India? Asking for a friend who works remote."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "offset": 0,
+  "limit": 100,
+  "totalFound": 1,
+  "content": [
+    {
+      "id": "744000152914589",
+      "name": "Principal Engineer - Machine Learning",
+      "releasedDate": "2026-10-01T12:31:58.551Z",
+      "location": { "city": "Hyderabad", "region": "TS", "country": "in", "remote": false, "hybrid": true, "fullLocation": "Hyderabad, , India" },
+      "department": {},
+      "function": { "id": "engineering", "label": "Engineering" },
+      "typeOfEmployment": { "id": "permanent", "label": "Full-time" }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "funding-news-cli",
+  "version": "1.0.0",
+  "description": "CLI that reads public startup-funding news RSS feeds (Inc42, Entrackr, YourStory, TechCrunch) and returns funding announcements as leads — zero runtime dependencies.",
+  "type": "module",
+  "main": "src/cli.ts",
+  "bin": {
+    "funding-news-search": "src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "test": "bun test --timeout 30000",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/bun": "1.3.14"
+  }
+}

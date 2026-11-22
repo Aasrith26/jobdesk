@@ -1,0 +1,22 @@
+{
+  "name": "Example Workable",
+  "description": null,
+  "jobs": [
+    {
+      "title": "Senior Machine Learning Engineer, Voice Agents - EMEA Remote",
+      "shortcode": "9E2A4C02C7",
+      "employment_type": "Full-time",
+      "telecommuting": true,
+      "department": "Science",
+      "url": "https://apply.workable.com/j/9E2A4C02C7",
+      "application_url": "https://apply.workable.com/j/9E2A4C02C7/apply",
+      "published_on": "2026-09-02",
+      "created_at": "2026-09-02",
+      "country": "France",
+      "city": "Paris",
+      "state": "Île-de-France",
+      "locations": [{ "country": "France", "countryCode": "FR", "city": "Paris", "region": "Île-de-France", "hidden": false }],
+      "description": "<p>Open voice-agent stack.</p>"
+    }
+  ]
+}

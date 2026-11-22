@@ -25,7 +25,11 @@
       "Bash(python tools/fetch_page.py:*)",
       "Bash(python3 tools/fetch_page.py:*)",
       "Bash(python tools/posting_guard.py:*)",
-      "Bash(python3 tools/posting_guard.py:*)"
+      "Bash(python3 tools/posting_guard.py:*)",
+      "Bash(bun run .agents/skills/company-boards-search/cli/src/cli.ts:*)",
+      "Bash(bun run .agents/skills/remote-boards-search/cli/src/cli.ts:*)",
+      "Bash(bun run .agents/skills/hn-hiring-search/cli/src/cli.ts:*)",
+      "Bash(bun run .agents/skills/shine-search/cli/src/cli.ts:*)"
     ],
     "ask": [
       "Edit(.claude/settings.json)",

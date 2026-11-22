@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Startups | TechCrunch</title>
+	<atom:link href="https://techcrunch.com/category/startups/feed/" rel="self" type="application/rss+xml" />
+	<link>https://techcrunch.com/category/startups/</link>
+	<description>Startup and Technology News</description>
+	<lastBuildDate>Tue, 10 Nov 2026 22:16:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9.11</generator>
+
+<image>
+	<url>https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32</url>
+	<title>Startups | TechCrunch</title>
+	<link>https://techcrunch.com/category/startups/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Harbinger raises $240M after expanding into defense</title>
+		<link>https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/</link>
+		
+		<dc:creator><![CDATA[Sean O'Kane]]></dc:creator>
+		<pubDate>Thu, 05 Nov 2026 17:52:44 +0000</pubDate>
+				<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[autonomous vehicles]]></category>
+		<category><![CDATA[electric trucks]]></category>
+		<category><![CDATA[Harbinger]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3185516</guid>
+
+					<description><![CDATA[The Los Angeles-based startup has now raised more than $650 million, and is working on electric trucks, emergency vehicles, and a driverless platform for the military.]]></description>
+		
+		
+		
+			</item>
+<item>
+		<title>AI hardware startup Nominal triples valuation to $3B in 8 months</title>
+		<link>https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Mon, 09 Nov 2026 19:21:46 +0000</pubDate>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[Nominal]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3186344</guid>
+
+					<description><![CDATA[Nominal, a startup that offers an AI platform for hardware engineering and claims Anduril as a major customer, has raised another big round of financing that triples its valuation. ]]></description>
+		
+		
+		
+			</item>
+<item>
+		<title>OpenAI acquires Odessia, travel startup created by Sonder founder</title>
+		<link>https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2026 21:08:52 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[travel]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3187116</guid>
+
+					<description><![CDATA[OpenAI has not yet said what its plans are for the future of travel. But Sonder founder Francis Davidson is a well-known figure in the travel industry.]]></description>
+		
+		
+		
+			</item>
+</channel>
+</rss>

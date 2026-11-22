@@ -1,0 +1,9 @@
+{
+  "companies": [
+    { "name": "Example Voice", "ats": "greenhouse", "token": "examplevoice", "tags": ["india", "voice"] },
+    { "name": "Example Lever", "ats": "lever", "token": "examplelever", "tags": ["india"] },
+    { "name": "Example Ashby", "ats": "ashby", "token": "exampleashby", "tags": ["llm-infra"] },
+    { "name": "Example SR", "ats": "smartrecruiters", "token": "ExampleSR", "tags": ["india"] },
+    { "name": "Example Workable", "ats": "workable", "token": "exampleworkable", "tags": ["voice"] }
+  ]
+}

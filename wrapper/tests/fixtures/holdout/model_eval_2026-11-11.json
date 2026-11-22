@@ -1,0 +1,7 @@
+{
+  "note": "Measured by tests/eval-llm.ts on 2026-11-11 against the unseen holdout sets (written after the rules were tuned, never used for tuning). Model = Claude Haiku via claude -p, batches of 25, no tools. Re-run: bun run tests/eval-llm.ts (costs about $0.41).",
+  "cost_usd": 0.414,
+  "scam": { "n": 100, "rules": { "recall": 0.58, "fpr": 0.08 }, "model": { "recall": 0.96, "fpr": 0.04 }, "rules_or_model": { "recall": 1.0, "fpr": 0.08 } },
+  "discrimination": { "n": 50, "rules": { "recall": 0.56, "fpr": 0.08 }, "model": { "recall": 1.0, "fpr": 0.0 }, "rules_or_model": { "recall": 1.0, "fpr": 0.08 } },
+  "email": { "n": 100, "rules": { "accuracy": 0.73 }, "model": { "accuracy": 0.98 } }
+}

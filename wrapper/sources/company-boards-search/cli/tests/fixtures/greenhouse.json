@@ -1,0 +1,31 @@
+{
+  "jobs": [
+    {
+      "absolute_url": "https://www.example-voice.ai/position?gh_jid=5001",
+      "id": 5001,
+      "internal_job_id": 4001,
+      "title": "AI Agent Engineer ",
+      "company_name": "Example Voice",
+      "location": { "name": "Bengaluru " },
+      "metadata": null,
+      "updated_at": "2026-11-08T10:57:50-05:00",
+      "first_published": "2026-09-23T06:13:40-04:00",
+      "content": "&lt;p&gt;&lt;strong&gt;About&lt;/strong&gt; voice agents &amp;amp; telephony&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Build STT/LLM/TTS pipelines&lt;/li&gt;&lt;li&gt;Own WebRTC&lt;/li&gt;&lt;/ul&gt;",
+      "departments": [{ "id": 1, "name": "AI Solutions " }],
+      "offices": [{ "id": 2, "name": "Bengaluru", "location": "Bengaluru, Karnataka, India" }]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/examplevoice/jobs/5002",
+      "id": 5002,
+      "title": "Account Executive",
+      "location": { "name": "Remote - US" },
+      "metadata": [{ "id": 9, "name": "Location Type", "value": "Remote" }],
+      "updated_at": "2026-10-01T00:00:00Z",
+      "first_published": null,
+      "content": "&lt;p&gt;Sell things.&lt;/p&gt;",
+      "departments": [],
+      "offices": []
+    }
+  ],
+  "meta": { "total": 2 }
+}

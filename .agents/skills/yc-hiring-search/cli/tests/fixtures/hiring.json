@@ -1,0 +1,347 @@
+[
+ {
+  "id": 5,
+  "name": "CircuitHub",
+  "slug": "circuithub",
+  "former_names": [],
+  "website": "https://circuithub.com",
+  "all_locations": "London, England, United Kingdom",
+  "long_description": "CircuitHub offers on-demand electronics manufacturing powered by our factory-scale robotics platform, The Grid. This platform delivers a 10x improvement in the speed and cost of small-batch electronics production. Leading customers like Tesla, NASA, and Zipline rely on CircuitHub to cut their time to market in half.",
+  "one_liner": "On-Demand Electronics Manufacturing",
+  "team_size": 58,
+  "industry": "Industrials",
+  "subindustry": "Industrials -> Manufacturing and Robotics",
+  "launched_at": 1322045523,
+  "tags": [
+   "Hard Tech",
+   "Hardware",
+   "Robotics",
+   "Manufacturing",
+   "Automation"
+  ],
+  "top_company": false,
+  "isHiring": true,
+  "nonprofit": false,
+  "batch": "Winter 2012",
+  "status": "Active",
+  "industries": [
+   "Industrials",
+   "Manufacturing and Robotics"
+  ],
+  "regions": [
+   "United Kingdom",
+   "Europe",
+   "Remote",
+   "Partly Remote"
+  ],
+  "stage": "Early",
+  "url": "https://www.ycombinator.com/companies/circuithub"
+ },
+ {
+  "id": 827,
+  "name": "Razorpay",
+  "slug": "razorpay",
+  "former_names": [],
+  "website": "https://razorpay.com",
+  "all_locations": "Bengaluru, KA, India",
+  "long_description": "The journey of building Razorpay started in 2014, when Harshil Mathur (CEO & Co-Founder) and Shashank Kumar (MD & Co-Founder) witnessed the dismal state of the online payments industry in India then and understood that they have a larger and more important issue to solve. And That was democratizing online payments for Indian businesses, particularly the underserved market, Startups and SMEs. Over the last 9 years, Razorpay has evolved from a single-product company to a multi-product company, from an online payment gateway to India’s only full-stack financial solutions company, offering payment",
+  "one_liner": "India's only full-stack financial solutions company for businesses.",
+  "team_size": 2700,
+  "industry": "Fintech",
+  "subindustry": "Fintech -> Payments",
+  "launched_at": 1416309883,
+  "tags": [
+   "Banking as a Service",
+   "Fintech",
+   "Payments",
+   "India"
+  ],
+  "top_company": true,
+  "isHiring": true,
+  "nonprofit": false,
+  "batch": "Winter 2015",
+  "status": "Active",
+  "industries": [
+   "Fintech",
+   "Payments"
+  ],
+  "regions": [
+   "India",
+   "South Asia",
+   "Remote",
+   "Partly Remote"
+  ],
+  "stage": "Growth",
+  "url": "https://www.ycombinator.com/companies/razorpay"
+ },
+ {
+  "id": 22266,
+  "name": "Zuddl",
+  "slug": "zuddl",
+  "former_names": [
+   "Joyn"
+  ],
+  "website": "http://www.zuddl.com",
+  "all_locations": "San Francisco, CA, USA; TS, India; Remote",
+  "long_description": "Zuddl is a modular platform for events and webinars that helps event marketers plan and execute events that drive growth. Event teams from global organizations like Microsoft, Google, ServiceNow, Zylo, Postman, TransPerfect and the United Nations trust Zuddl. Our modular approach to event management lets B2B marketers and conferences organizers decide which components they need to build the perfect event and scale their event program. Zuddl is an outcome-oriented platform with a focus on flexibility, and is more partner, less vendor.\r\n\r\nFUNDING\r\n\r\nZuddl being a part Y-Combinator 2020 batch has",
+  "one_liner": "Zuddl is a modular platform for events and webinars that helps event…",
+  "team_size": 120,
+  "industry": "B2B",
+  "subindustry": "B2B",
+  "launched_at": 1598095349,
+  "tags": [
+   "SaaS",
+   "B2B"
+  ],
+  "top_company": false,
+  "isHiring": true,
+  "nonprofit": false,
+  "batch": "Summer 2020",
+  "status": "Active",
+  "industries": [
+   "B2B"
+  ],
+  "regions": [
+   "United States of America",
+   "India",
+   "America / Canada",
+   "South Asia",
+   "Remote",
+   "Fully Remote"
+  ],
+  "stage": "Growth",
+  "url": "https://www.ycombinator.com/companies/zuddl"
+ },
+ {
+  "id": 31584,
+  "name": "CONUS",
+  "slug": "conus",
+  "former_names": [],
+  "website": "https://www.conus-med.com",
+  "all_locations": "Cologne, NRW, Germany",
+  "long_description": "CONUS structures fragmented medical device information for surgeons. We combine manufacturer documentation, hospital protocols and medical research in one place, giving surgeons and MedTech teams reliable answers across products and procedures.\r\n\r\nWe already work with leading manufacturers including Johnson & Johnson, Stryker and Zimmer Biomet, and since launching six months ago we’ve gone live in 25 hospitals.\r\n\r\nLong term, hospitals will use CONUS to select and order implants across manufacturers.",
+  "one_liner": "The AI knowledge layer for medical devices",
+  "team_size": 3,
+  "industry": "Healthcare",
+  "subindustry": "Healthcare",
+  "launched_at": 1790675017,
+  "tags": [
+   "Healthcare",
+   "AI"
+  ],
+  "top_company": false,
+  "isHiring": true,
+  "nonprofit": false,
+  "batch": "Fall 2026",
+  "status": "Active",
+  "industries": [
+   "Healthcare"
+  ],
+  "regions": [
+   "Germany",
+   "Europe"
+  ],
+  "stage": "Early",
+  "url": "https://www.ycombinator.com/companies/conus"
+ },
+ {
+  "id": 33318,
+  "name": "HillStar",
+  "slug": "hillstar",
+  "former_names": [],
+  "website": "https://hillstar.ai",
+  "all_locations": "San Francisco, CA, USA",
+  "long_description": "",
+  "one_liner": "Agents to help utilities make better buying decisions.",
+  "team_size": 2,
+  "industry": "B2B",
+  "subindustry": "B2B",
+  "launched_at": 1793224703,
+  "tags": [
+   "GovTech",
+   "Big Data",
+   "AI"
+  ],
+  "top_company": false,
+  "isHiring": true,
+  "nonprofit": false,
+  "batch": "Fall 2026",
+  "status": "Active",
+  "industries": [
+   "B2B"
+  ],
+  "regions": [
+   "United States of America",
+   "America / Canada",
+   "Remote",
+   "Partly Remote"
+  ],
+  "stage": "Early",
+  "url": "https://www.ycombinator.com/companies/hillstar"
+ },
+ {
+  "id": 30448,
+  "name": "PgDog",
+  "slug": "pgdog",
+  "former_names": [],
+  "website": "https://pgdog.dev",
+  "all_locations": "San Francisco, CA, USA; Remote",
+  "long_description": "PgDog is an application for sharding PostgreSQL. It understands SQL and can distribute queries automatically between databases. It's built for managed databases, like AWS RDS, and doesn't require any changes to application code or schema.\r\n\r\nIn addition to sharding, PgDog is a load balancer and pooler, so it can act as a replacement for PgBouncer, RDS Proxy, and other Postgres scaling products. It brings the simplicity and performance of HTTP load balancing to the database.\r\n\r\nBuilt from the experience of sharding Postgres at Instacart during peak growth in 2020, PgDog is the answer to the old",
+  "one_liner": "Scaling engine for PostgreSQL",
+  "team_size": 3,
+  "industry": "B2B",
+  "subindustry": "B2B -> Infrastructure",
+  "launched_at": 1745009582,
+  "tags": [
+   "Databases"
+  ],
+  "top_company": false,
+  "isHiring": true,
+  "nonprofit": false,
+  "batch": "Spring 2025",
+  "status": "Active",
+  "industries": [
+   "B2B",
+   "Infrastructure"
+  ],
+  "regions": [
+   "United States of America",
+   "America / Canada",
+   "Remote",
+   "Fully Remote"
+  ],
+  "stage": "Early",
+  "url": "https://www.ycombinator.com/companies/pgdog"
+ },
+ {
+  "id": 29613,
+  "name": "ClaimSorted",
+  "slug": "claimsorted",
+  "former_names": [],
+  "website": "https://claimsorted.com",
+  "all_locations": "New York City, NY, USA",
+  "long_description": "ClaimSorted helps insurance companies remove the hassle of managing claims by enabling them to outsource their claim operations to us. This service is known as a Third Party Administrator (TPA). Unlike traditional TPAs, we blend AI and best-in-class experts to deliver a 5-star customer experience, minimise mistakes and speed up claim assessment.",
+  "one_liner": "Making it easy for insurance companies to process claims",
+  "team_size": 50,
+  "industry": "Fintech",
+  "subindustry": "Fintech -> Insurance",
+  "launched_at": 1715711900,
+  "tags": [],
+  "top_company": false,
+  "isHiring": true,
+  "nonprofit": false,
+  "batch": "Summer 2024",
+  "status": "Active",
+  "industries": [
+   "Fintech",
+   "Insurance"
+  ],
+  "regions": [
+   "United States of America",
+   "America / Canada",
+   "Remote",
+   "Partly Remote"
+  ],
+  "stage": "Early",
+  "url": "https://www.ycombinator.com/companies/claimsorted"
+ },
+ {
+  "id": 28896,
+  "name": "GovernGPT",
+  "slug": "governgpt",
+  "former_names": [
+   "governGPT"
+  ],
+  "website": "https://www.governgpt.com/",
+  "all_locations": "Montreal, QC, Canada",
+  "long_description": "For money managers to raise their next billion, they dedicate entire teams to spend days filling diligence questionnaires with recycled content. We do it in minutes using AI.\r\nClients include Pantheon, Tishman Speyer, Coatue, ICONIQ, DigitalBridge, PAG, Stonepeak, Onex, Urban Partners, Yarra Capital, Bridgewater,Axonic, NIAM, Raith Capital, Intl Farming, Hillsdale, White Oak, Oakley, PollenStreet, Kartesia, L1, Tribeca, etc. ",
+  "one_liner": "The RFP Platform Asset Managers Adopt",
+  "team_size": 7,
+  "industry": "Fintech",
+  "subindustry": "Fintech",
+  "launched_at": 1699569347,
+  "tags": [],
+  "top_company": false,
+  "isHiring": true,
+  "nonprofit": false,
+  "batch": "Winter 2024",
+  "status": "Active",
+  "industries": [
+   "Fintech"
+  ],
+  "regions": [
+   "Canada",
+   "America / Canada"
+  ],
+  "stage": "Early",
+  "url": "https://www.ycombinator.com/companies/governgpt"
+ },
+ {
+  "id": 22124,
+  "name": "Taktile",
+  "slug": "taktile",
+  "former_names": [
+   "Taktile",
+   "Inc."
+  ],
+  "website": "http://www.taktile.com",
+  "all_locations": "Berlin, Berlin, Germany",
+  "long_description": "Taktile empowers financial institutions to quickly unlock AI-driven efficiencies across the customer lifecycle, reducing manual work while optimizing decisions and enabling seamless end-user experiences.\r\n\r\nBuilt for highly regulated environments, our agentic decision platform combines the speed of AI automation with the oversight of human judgement—so you can safely approve customers, catch more fraud, and stay compliant.\r\n\r\nWe power AI transformation from offices in NYC, London, Berlin, and Iasi, and have raised $80M in capital from top investors including Index Ventures, Tiger Global, Balde",
+  "one_liner": "Transform your decision-making with reliable AI agents in weeks, not…",
+  "team_size": 150,
+  "industry": "B2B",
+  "subindustry": "B2B",
+  "launched_at": 1638102391,
+  "tags": [
+   "Fintech",
+   "Machine Learning",
+   "Enterprise Software",
+   "AI"
+  ],
+  "top_company": false,
+  "isHiring": true,
+  "nonprofit": false,
+  "batch": "Summer 2020",
+  "status": "Active",
+  "industries": [
+   "B2B"
+  ],
+  "regions": [
+   "Germany",
+   "Europe",
+   "Remote",
+   "Partly Remote"
+  ],
+  "stage": "Early",
+  "url": "https://www.ycombinator.com/companies/taktile"
+ },
+ {
+  "id": 64,
+  "name": "Y Combinator",
+  "slug": "y-combinator",
+  "former_names": [],
+  "website": "https://www.ycombinator.com",
+  "all_locations": "",
+  "long_description": "Make something people want.",
+  "one_liner": "Make something people want.",
+  "team_size": 100,
+  "industry": "Fintech",
+  "subindustry": "Fintech",
+  "launched_at": 1322046644,
+  "tags": [],
+  "top_company": false,
+  "isHiring": true,
+  "nonprofit": false,
+  "batch": "Unspecified",
+  "status": "Active",
+  "industries": [
+   "Fintech"
+  ],
+  "regions": [
+   "Remote",
+   "Partly Remote"
+  ],
+  "stage": "Early",
+  "url": "https://www.ycombinator.com/companies/y-combinator"
+ }
+]

@@ -1,0 +1,24 @@
+{
+ "full_name": "patsypppe/meridian",
+ "html_url": "https://github.com/patsypppe/meridian",
+ "description": "Agent evaluation harness for CI. Grades from outside the container, reports pass^k instead of a mean, and tells you when the run could not have detected the regression.",
+ "homepage": null,
+ "stargazers_count": 2,
+ "language": "Python",
+ "topics": [
+  "agent-evaluation",
+  "ci-cd",
+  "docker",
+  "llm-evaluation",
+  "mypy",
+  "pytest",
+  "python",
+  "reproducibility"
+ ],
+ "pushed_at": "2026-11-08T16:14:56Z",
+ "archived": false,
+ "owner": {
+  "login": "patsypppe",
+  "type": "User"
+ }
+}

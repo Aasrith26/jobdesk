@@ -1,0 +1,11 @@
+{
+ "last_updated": "2026-11-11T03:51:00.560Z",
+ "readme": "https://github.com/yc-oss/api",
+ "companies": {
+  "hiring": {
+   "name": "Companies currently hiring",
+   "count": 1498,
+   "api": "https://yc-oss.github.io/api/companies/hiring.json"
+  }
+ }
+}

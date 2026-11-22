@@ -1,0 +1,722 @@
+[
+  {
+    "id": "email-set-001",
+    "label": "interview_invite",
+    "subject": "Walk-in interview call letter - Staff Nurse",
+    "body": "Dear Ms. Anjali Kurian,\n\nWith reference to your application, you are invited to attend a walk-in interview for the post of Staff Nurse (ICU) at Sunrise Multispeciality Hospital, Nagpur, on Saturday, 21 November 2026 between 10:00 AM and 1:00 PM. Please report to the HR office on the 3rd floor with your original certificates and nursing council registration.\n\nHR Department"
+  },
+  {
+    "id": "email-set-002",
+    "label": "interview_invite",
+    "subject": "Rescheduled: Interview for Frontend Engineer",
+    "body": "Hi Tanvi,\n\nApologies for the change. Our interviewer has a conflict, so we've moved your Frontend Engineer interview from Wednesday, 18 November 2026 to Friday, 20 November 2026 at 3:00 PM IST. The Google Meet link stays the same. If the new time doesn't work, reply and we'll find another slot.\n\nThanks,\nSwati, Talent Team"
+  },
+  {
+    "id": "email-set-003",
+    "label": "rejection",
+    "subject": "Interview Result - Relationship Officer",
+    "body": "Dear Candidate,\n\nWe thank you for attending the interview for the post of Relationship Officer at Avantis Small Finance Bank. We are sorry to inform you that you are not shortlisted for the next round of the selection process.\n\nWe wish you all the best for your career.\n\nRecruitment Team"
+  },
+  {
+    "id": "email-set-004",
+    "label": "info_request",
+    "subject": "Joining availability",
+    "body": "Dear Ayesha,\n\nThank you for your time so far in the process. To help us plan, could you let us know the earliest date you could join if selected, and whether your notice period is negotiable or can be bought out?\n\nRegards,\nSnehal, HR"
+  },
+  {
+    "id": "email-set-005",
+    "label": "info_request",
+    "subject": "Salary expectations",
+    "body": "Hi Neha,\n\nThanks for applying to the Senior Backend Engineer role. As we're a remote-first company paying in USD, could you share your salary expectations for a full-time contractor arrangement? A range is fine.\n\nCheers,\nHannah, Ledgerline"
+  },
+  {
+    "id": "email-set-006",
+    "label": "assessment",
+    "subject": "Writing test - Hindi Content Writer",
+    "body": "Namaste Pallavi,\n\nThank you for applying to Paisaguru. As part of our selection, please write an 800-word article in Hindi on 'SIP vs FD: what should a first-time investor choose?'. The brief and style guide are attached. Please email the article in Google Docs format by Wednesday, 25 November 2026. This trial is paid at ₹1,500.\n\nRegards,\nEditorial Team"
+  },
+  {
+    "id": "email-set-007",
+    "label": "other",
+    "subject": "Your application has been viewed",
+    "body": "Hi Mohit,\n\nGood news! Your application for 'Data Analyst' at Orbitline Logistics was viewed by the recruiter on 12 November 2026. We'll notify you of any updates.\n\nTip: Candidates who complete their profile are 2x more likely to hear back.\n\nThe Hirewise Team"
+  },
+  {
+    "id": "email-set-008",
+    "label": "info_request",
+    "subject": "Updated resume please",
+    "body": "Hi Sameer,\n\nThanks for your interest in the Senior Backend Engineer role. The CV we have on file seems to be from 2023. Could you send us your latest resume, ideally as a PDF, so the hiring manager can review your recent work?\n\nThanks,\nHannah, Ledgerline"
+  },
+  {
+    "id": "email-set-009",
+    "label": "info_request",
+    "subject": "Writing samples",
+    "body": "Hi Pallavi,\n\nThank you for your interest in writing for Paisaguru. Could you share two or three published samples, preferably on personal finance? Links or Google Docs are both fine.\n\nRegards,\nEditorial Team"
+  },
+  {
+    "id": "email-set-010",
+    "label": "info_request",
+    "subject": "Clarification on employment dates",
+    "body": "Hi Vivek,\n\nWhile reviewing your application, we noticed that the employment dates for your role at your previous company differ between your CV and your LinkedIn profile. Could you confirm the correct start and end dates?\n\nThanks,\nNorthpeak Recruiting"
+  },
+  {
+    "id": "email-set-011",
+    "label": "info_request",
+    "subject": "Confirm interest - Salesforce Developer (Austin, TX)",
+    "body": "Hi Sandeep,\n\nFollowing up on my earlier message. Please confirm your interest in the Salesforce Developer contract role and share your visa status, current location, availability to start and your expected hourly rate on W2. I'll submit your profile once I hear back.\n\nThanks,\nMark Reyes, Brightpath IT Staffing"
+  },
+  {
+    "id": "email-set-012",
+    "label": "assessment",
+    "subject": "Case study for Product Manager role",
+    "body": "Hi Harsh,\n\nAs discussed, please find attached the case study for the Senior Product Manager role. It asks you to propose a roadmap for improving claim settlement time. Please send a deck of no more than 8 slides by Friday, 4 December 2026, 6 PM IST. You'll present it to the panel in the following round.\n\nBest,\nRitika, Talentcrest Partners"
+  },
+  {
+    "id": "email-set-013",
+    "label": "rejection",
+    "subject": "Update on the Marketing Manager position",
+    "body": "Dear Pooja,\n\nThank you for your interest in the Marketing Manager role at Dewbloom. We wanted to let you know that the position has now been filled. We truly appreciate the time you invested in the process and encourage you to keep an eye on our careers page for future openings.\n\nWarm regards,\nPeople Team, Dewbloom"
+  },
+  {
+    "id": "email-set-014",
+    "label": "info_request",
+    "subject": "Quick question about your career gap",
+    "body": "Hi Smita,\n\nThank you for your application for the Business Analyst role. The hiring manager noticed a gap between March 2024 and June 2025 on your CV. Could you briefly share what you were doing during that time? There's no wrong answer; we just want to understand your journey.\n\nBest,\nTalent Team"
+  },
+  {
+    "id": "email-set-015",
+    "label": "info_request",
+    "subject": "Exploring opportunities?",
+    "body": "Hi Aditya,\n\nI'm a recruiter at Talentcrest Partners. Before I share any specific roles, I'd love to understand what you're looking for: your preferred location, the kind of company (startup vs. large enterprise), the role level, and your compensation expectations. Could you reply with a few lines?\n\nBest,\nRitika"
+  },
+  {
+    "id": "email-set-016",
+    "label": "rejection",
+    "subject": "Feedback on your interview",
+    "body": "Hi Ishaan,\n\nThanks for interviewing with us. We've decided not to extend an offer this time. Some feedback from the panel: your problem-solving was strong, but the design discussion needed more depth on scaling and data consistency. We'd be happy to consider you again in 6-12 months.\n\nAll the best,\nQuillstack Recruiting"
+  },
+  {
+    "id": "email-set-017",
+    "label": "assessment",
+    "subject": "Your application to Quillstack: online assessment",
+    "body": "Hi Aman,\n\nThanks for applying for the Software Engineer I role. We have received your application. As the next step, please complete our online assessment on HackerRank (two coding questions and 10 MCQs, 75 minutes). The link expires on Saturday, 28 November 2026.\n\nhttps://www.hackerrank.com/test/example-quillstack\n\nQuillstack Recruiting"
+  },
+  {
+    "id": "email-set-018",
+    "label": "other",
+    "subject": "A recruiter viewed your profile",
+    "body": "Hi Sachin,\n\nA recruiter from an IT services company in Pune viewed your profile today. Keep your profile updated to increase your chances of being contacted.\n\nUpdate your profile\n\nThe Hirewise Team"
+  },
+  {
+    "id": "email-set-019",
+    "label": "info_request",
+    "subject": "Right-to-work documents",
+    "body": "Dear Arjun,\n\nAs part of UK right-to-work checks, please upload a copy of your passport and your share code from the UK government's online service before your start date. You can do this in the 'Documents' section of your candidate portal.\n\nKind regards,\nPeople Operations"
+  },
+  {
+    "id": "email-set-020",
+    "label": "assessment",
+    "subject": "Psychometric assessment - Sales Officer",
+    "body": "Dear Ravi,\n\nGreetings from Avantis Small Finance Bank. You are required to complete a 30-minute psychometric assessment for the Sales Officer role. Please use the link below before 18 November 2026, 9 PM.\n\nhttps://assess.example.in/avantis/psy\n\nThanks & Regards,\nRecruitment Team"
+  },
+  {
+    "id": "email-set-021",
+    "label": "other",
+    "subject": "How was your candidate experience?",
+    "body": "Hi Meera,\n\nYou recently took part in our hiring process. We'd love to hear about your experience, whatever the outcome. The survey takes 3 minutes and your answers are anonymous. It closes on 10 December 2026.\n\nTake the survey\n\nThanks,\nCartwheel People Team"
+  },
+  {
+    "id": "email-set-022",
+    "label": "assessment",
+    "subject": "SQL assessment - Data Analyst",
+    "body": "Hello Mohit,\n\nThank you for applying to the Data Analyst role at Orbitline Logistics. Please complete our SQL assessment, which has 6 questions on joins, window functions and aggregation, timed at 75 minutes. The link is valid until Thursday, 19 November 2026, 11:59 PM IST.\n\nhttps://assess.example.com/sql/orbitline-da\n\nBest,\nOrbitline Talent Team"
+  },
+  {
+    "id": "email-set-023",
+    "label": "assessment",
+    "subject": "Complete your personality questionnaire",
+    "body": "Hi Gaurav,\n\nThank you for your application to the Graduate Programme. The next step is an online personality and work-style questionnaire. There are no right or wrong answers and it takes about 25 minutes. Please complete it by Thursday, 26 November 2026 using your personal link: https://assess.example.com/q/8f2a1\n\nKind regards,\nEarly Careers Team, Corvane"
+  },
+  {
+    "id": "email-set-024",
+    "label": "interview_invite",
+    "subject": "Interview invitation - Backend Engineer at Finlytic",
+    "body": "Hi Rohan,\n\nThanks for applying for the Backend Engineer role. We'd love to set up a 45-minute technical interview with two of our engineers. Please pick a slot that works for you using this link: https://calendly.com/finlytic-talent/tech-interview. Slots are open between 17 and 20 November 2026, and the interview will be on Google Meet.\n\nBest,\nAparna\nTalent Team, Finlytic"
+  },
+  {
+    "id": "email-set-025",
+    "label": "interview_invite",
+    "subject": "Interview confirmation - please bring documents",
+    "body": "Dear Rakesh,\n\nThis is to confirm your interview for the Accounts Executive position on Tuesday, 1 December 2026 at 11:00 AM at our Andheri office. Please bring your updated resume, your last three salary slips and a photo ID. The interview will have two rounds: a short Excel exercise with the finance manager, followed by a discussion with the CFO.\n\nRegards,\nHaven Co-living HR"
+  },
+  {
+    "id": "email-set-026",
+    "label": "assessment",
+    "subject": "Translation test - Tamil to English",
+    "body": "Dear Ms. Lakshmi,\n\nAs part of the selection for the Freelance Translator (Tamil-English) role, please translate the attached 600-word document and return it within 72 hours, no later than Monday, 16 November 2026, 12 noon IST. Please maintain the formatting of the original.\n\nBest regards,\nVendor Management, Linguaroute"
+  },
+  {
+    "id": "email-set-027",
+    "label": "other",
+    "subject": "Reset your password",
+    "body": "Hello,\n\nWe received a request to reset the password for your Northpeak Careers account. Click the link below to choose a new password. This link expires in 30 minutes. If you didn't request this, you can ignore this email.\n\nReset password\n\nNorthpeak Careers"
+  },
+  {
+    "id": "email-set-028",
+    "label": "other",
+    "subject": "We've received your application",
+    "body": "Hi Rohan,\n\nThank you for applying for the Backend Engineer role at Finlytic. This is an automated confirmation that we've received your application. Our team reviews every application carefully, and you'll hear from us if your profile matches our requirements.\n\nFinlytic Recruiting\n(This is an automated message, please do not reply.)"
+  },
+  {
+    "id": "email-set-029",
+    "label": "other",
+    "subject": "15 new jobs matching your profile",
+    "body": "Hi Lavanya,\n\nBased on your profile, here are new jobs posted in the last 24 hours:\n- Data Analyst, Orbitline Logistics, Hyderabad, 6-9 LPA\n- Business Analyst, Corvane Insurance, Mumbai, 8-12 LPA\n- Analytics Engineer, Kindleaf, Remote\n...and 12 more.\n\nView all jobs in the app.\n\nTeam Naukri"
+  },
+  {
+    "id": "email-set-030",
+    "label": "interview_invite",
+    "subject": "Coffee with the founders?",
+    "body": "Hey Divya,\n\nAnjali and I really liked your Flutter work on GitHub. Would you be up for a relaxed 30-minute video call with both of us to talk about Chalo Fit, the role and how you like to work? We're free on Saturday, 14 November 2026 any time after 11 AM, or Sunday, 15 November 2026 in the evening.\n\nCheers,\nRahul, Co-founder"
+  },
+  {
+    "id": "email-set-031",
+    "label": "rejection",
+    "subject": "Important update regarding your offer",
+    "body": "Dear Pranav,\n\nWe regret to inform you that due to an organisation-wide hiring freeze, Quillstack Technologies is unable to proceed with your offer for the Software Engineer I position, which had a joining date of 4 January 2027. We sincerely apologise for the disruption this causes. As a goodwill gesture, we will pay one month's salary as compensation.\n\nShalini Rao, Talent Acquisition"
+  },
+  {
+    "id": "email-set-032",
+    "label": "other",
+    "subject": "Application received - Staff Nurse",
+    "body": "Dear Applicant,\n\nThank you for your application for the post of Staff Nurse. Your application number is SMH/2026/0417. Applications are being screened, and shortlisted candidates will be contacted by phone or email for an interview.\n\nHR Department\nSunrise Multispeciality Hospital"
+  },
+  {
+    "id": "email-set-033",
+    "label": "other",
+    "subject": "Salary insights for Data Analysts in Hyderabad",
+    "body": "Hi Lavanya,\n\nCurious how your pay compares? Data Analysts in Hyderabad with 2-4 years of experience earn a median of ₹8.2 LPA, according to 1,240 salaries shared on our platform. See how companies like Orbitline and Kindleaf compare.\n\nExplore salaries\n\nThe Hirewise Team"
+  },
+  {
+    "id": "email-set-034",
+    "label": "info_request",
+    "subject": "Location preference",
+    "body": "Hi Ravi,\n\nWe have Relationship Officer openings in both Madurai and Trichy. Could you let us know which location you prefer and whether you're open to relocating if the other branch is the only option?\n\nThanks & Regards,\nRecruitment Team, Avantis SFB"
+  },
+  {
+    "id": "email-set-035",
+    "label": "info_request",
+    "subject": "Work authorization question",
+    "body": "Hi Karthik,\n\nThanks for applying to the Operations Analyst role in London. Before we proceed, could you confirm whether you currently have the right to work in the UK, and if so under which visa or status? Unfortunately we are unable to sponsor visas for this role.\n\nBest regards,\nTalent Team"
+  },
+  {
+    "id": "email-set-036",
+    "label": "rejection",
+    "subject": "Your application to Finlytic",
+    "body": "Hi Rohan,\n\nThank you for taking the time to apply for the Backend Engineer role and for speaking with our team. After careful consideration, we've decided to move forward with other candidates whose experience more closely matches what we need right now.\n\nWe appreciate your interest in Finlytic and wish you all the best in your search.\n\nRegards,\nFinlytic Talent Team"
+  },
+  {
+    "id": "email-set-037",
+    "label": "interview_invite",
+    "subject": "Pair programming interview - Ledgerline",
+    "body": "Hi Neha,\n\nWe'd like to invite you to a 90-minute live pair programming interview with one of our engineers on Tuesday, 8 December 2026 at 4:00 PM IST. You'll work together on a small bug in a Python codebase; use your own editor and share your screen on Zoom. There's no preparation needed. Please confirm by replying to this email.\n\nThanks,\nHannah"
+  },
+  {
+    "id": "email-set-038",
+    "label": "assessment",
+    "subject": "TestGorilla assessment - Customer Success Manager",
+    "body": "Hello Nikita,\n\nWe'd like to invite you to complete a short skills assessment for the Customer Success Manager role at Kindleaf. It includes tests on customer communication, problem solving and English. Total time is about 40 minutes. Please finish it within 5 days, by Monday, 16 November 2026.\n\nStart assessment: https://app.testgorilla.com/example-kindleaf\n\nThanks,\nKindleaf Hiring Team"
+  },
+  {
+    "id": "email-set-039",
+    "label": "rejection",
+    "subject": "Store Manager position",
+    "body": "Dear Sunil,\n\nThank you for visiting our Koramangala outlet and meeting our area manager. We have filled the Store Manager position internally by promoting a member of our existing team.\n\nWe will keep your resume on file for future openings at our new outlets.\n\nRegards,\nUrban Crust HR"
+  },
+  {
+    "id": "email-set-040",
+    "label": "assessment",
+    "subject": "Situational judgement test - Graduate Scheme 2027",
+    "body": "Dear Applicant,\n\nThank you for applying to the 2027 Graduate Scheme. You are invited to complete our online situational judgement test, which presents workplace scenarios and asks how you would respond. It takes about 30 minutes. The deadline is Tuesday, 15 December 2026 at 23:59 GMT.\n\nKind regards,\nEarly Careers, Brightlane"
+  },
+  {
+    "id": "email-set-041",
+    "label": "interview_invite",
+    "subject": "Your virtual onsite with Ledgerline",
+    "body": "Hi Sameer,\n\nThanks for a great conversation last week. We'd like to invite you to our virtual onsite on Thursday, 3 December 2026. It consists of four 45-minute sessions: a pairing session, system design, a product conversation with our CPO, and a values chat with a founder. We'll send separate Zoom links for each session. Let me know if the date works.\n\nBest,\nHannah, Ledgerline"
+  },
+  {
+    "id": "email-set-042",
+    "label": "other",
+    "subject": "New roles at Lumenstack you might like",
+    "body": "Hi Isha,\n\nAs a member of our talent community, here are the latest openings:\n- Senior Software Engineer, Storage (Remote)\n- Technical Writer (Bengaluru)\n- Solutions Engineer (Mumbai)\n\nApply on our careers page. You can update your alert preferences anytime.\n\nLumenstack Talent Community"
+  },
+  {
+    "id": "email-set-043",
+    "label": "info_request",
+    "subject": "Can you join by 1 December?",
+    "body": "Hi Ritesh,\n\nThe team would like to move quickly. Could you confirm whether you'd be able to join by Tuesday, 1 December 2026? If not, please share the earliest date you could start.\n\nThanks,\nKaran Sood, Recruiting"
+  },
+  {
+    "id": "email-set-044",
+    "label": "assessment",
+    "subject": "Complete your recorded video interview",
+    "body": "Dear Ananya,\n\nThank you for your interest in the Graduate Analyst Programme. The next stage is a one-way recorded video interview on HireVue. You will be asked 5 questions and will have 2 minutes to record each answer; there is no live interviewer. Please complete it by Sunday, 29 November 2026 at 11:59 PM.\n\nLink: https://app.hirevue.com/example\n\nRegards,\nGraduate Recruitment"
+  },
+  {
+    "id": "email-set-045",
+    "label": "assessment",
+    "subject": "Online aptitude test - Mercer Mettl",
+    "body": "Dear Shruti,\n\nAs part of the selection process for the Management Trainee role, you are required to take an online aptitude test on Mercer Mettl. The test is 60 minutes and is proctored. Please complete it before Sunday, 22 November 2026. Your unique test link and login credentials are below.\n\nLink: https://tests.mettl.com/example-sunmark\n\nRegards,\nSunmark Foods HR"
+  },
+  {
+    "id": "email-set-046",
+    "label": "interview_invite",
+    "subject": "HR Round - Inside Sales Executive",
+    "body": "Hi Ayesha,\n\nThank you for the role-play round yesterday, the manager was impressed. We would now like to schedule your HR round to discuss compensation, joining date and policies. Please let me know if you are available on Friday, 27 November 2026 between 11 AM and 1 PM. It will take around 20 minutes over a video call.\n\nRegards,\nSnehal, HR"
+  },
+  {
+    "id": "email-set-047",
+    "label": "other",
+    "subject": "Upgrade to Premium and stand out to recruiters",
+    "body": "Hi Prateek,\n\nRecruiters viewed 3 profiles like yours this week. Premium members get 3x more profile views, appear at the top of recruiter searches and get a resume review by experts. Upgrade now and save 40% - offer valid until 30 November 2026.\n\nUpgrade now\n\nTeam Naukri"
+  },
+  {
+    "id": "email-set-048",
+    "label": "interview_invite",
+    "subject": "Round 2 - Technical Interview | Brightwave Systems",
+    "body": "Dear Candidate,\n\nCongratulations on qualifying in the first technical round. You are invited to attend Round 2 (Technical + Managerial) on Monday, 7 December 2026 at 2:00 PM. The interview will be conducted on Microsoft Teams; the link will be shared one day prior. Kindly be available 10 minutes before the scheduled time.\n\nRegards,\nTalent Acquisition, Brightwave"
+  },
+  {
+    "id": "email-set-049",
+    "label": "rejection",
+    "subject": "Head of Sales role - update",
+    "body": "Dear Ramesh,\n\nThank you for your interest in the Head of Sales position and for meeting with our leadership team. We wanted to let you know that we have decided to appoint an internal candidate to the role.\n\nWe were impressed by your experience and hope to stay connected.\n\nBest regards,\nSunmark Foods"
+  },
+  {
+    "id": "email-set-050",
+    "label": "rejection",
+    "subject": "Senior Product Manager - update",
+    "body": "Hi Harsh,\n\nThanks for presenting the case study. The client has decided not to take your candidacy forward for the Senior Product Manager role; they're prioritising candidates with insurance domain depth. That said, I have a Group PM opening with a fintech client that may suit you better. Let me know if you'd like to hear more.\n\nBest,\nRitika"
+  },
+  {
+    "id": "email-set-051",
+    "label": "interview_invite",
+    "subject": "A recruiter has invited you to interview",
+    "body": "Hi Harsh,\n\nGood news! Ritika Bansal from Talentcrest Partners has invited you to interview for Senior Product Manager. Proposed time: Tuesday, 17 November 2026, 11:30 AM IST (30 min, video call).\n\nAccept, decline or suggest a new time from your Hirewise inbox.\n\nThe Hirewise Team"
+  },
+  {
+    "id": "email-set-052",
+    "label": "rejection",
+    "subject": "Update on the Operations Lead role",
+    "body": "Dear Arvind,\n\nThank you for your patience during our hiring process. Due to a change in business priorities, we have closed the Operations Lead requisition and will not be proceeding with any candidates for this role.\n\nWe're sorry for the inconvenience and appreciate the time you spent with us.\n\nRegards,\nZipkart HR"
+  },
+  {
+    "id": "email-set-053",
+    "label": "rejection",
+    "subject": "Regarding your application - Data Analyst",
+    "body": "Dear Mohit,\n\nThank you for applying for the Data Analyst position at Orbitline Logistics. We received many strong applications, and unfortunately we are not able to offer you a position at this time.\n\nWe wish you success in your future endeavours.\n\nSincerely,\nOrbitline Talent Team"
+  },
+  {
+    "id": "email-set-054",
+    "label": "info_request",
+    "subject": "Your application is missing a cover letter",
+    "body": "Hi Rhea,\n\nThank you for applying for the Program Officer position. Our application requires a one-page statement of interest, which seems to be missing. Could you email it to us by Friday, 4 December 2026 so we can review your application in full?\n\nBest wishes,\nKalpavriksha Foundation"
+  },
+  {
+    "id": "email-set-055",
+    "label": "other",
+    "subject": "This week in tech hiring",
+    "body": "Hello,\n\nIn this week's newsletter: why AI engineers are the most in-demand role of the quarter, 5 tips for negotiating your notice period, and an interview with the CTO of a Bengaluru fintech on what she looks for in senior hires. Plus: salary trends for data roles in 2026.\n\nRead more on the blog.\n\nThe Hirewise Team"
+  },
+  {
+    "id": "email-set-056",
+    "label": "interview_invite",
+    "subject": "Zoom interview details - Program Officer",
+    "body": "Dear Mr. Joshi,\n\nYour interview for the Program Officer (Education) position is confirmed for Thursday, 10 December 2026 at 3:00 PM IST.\n\nZoom link: https://zoom.us/j/0000000000 (Passcode: KF2026)\n\nThe panel will include our Program Director and a member of the board. The interview will last about 50 minutes.\n\nBest wishes,\nKalpavriksha Foundation"
+  },
+  {
+    "id": "email-set-057",
+    "label": "rejection",
+    "subject": "Program Officer search",
+    "body": "Dear Mr. Joshi,\n\nThank you for your interest in the Program Officer (Education) position and for the thoughtful conversation with our panel. We have now concluded our search and have offered the role to another candidate.\n\nWe deeply value your commitment to education and hope you'll consider Kalpavriksha Foundation for future roles.\n\nWarm regards,\nKalpavriksha Foundation"
+  },
+  {
+    "id": "email-set-058",
+    "label": "info_request",
+    "subject": "GitHub username needed",
+    "body": "Hi Divya,\n\nThanks for agreeing to the short paid task! Could you send me your GitHub username? I'll add you to our private repository so you can get started.\n\nCheers,\nRahul, Chalo Fit"
+  },
+  {
+    "id": "email-set-059",
+    "label": "info_request",
+    "subject": "Before we schedule your interview",
+    "body": "Hi Prateek,\n\nThanks for your application for the QA Automation Engineer role. Before we schedule your technical interview, could you confirm your notice period, current CTC and expected CTC? We're looking for someone who can join within 30 days.\n\nRegards,\nTalent Team, Qualitrix"
+  },
+  {
+    "id": "email-set-060",
+    "label": "interview_invite",
+    "subject": "Quick chat about the Customer Success role?",
+    "body": "Hey Nikita,\n\nI'm a recruiter at Kindleaf and came across your application for the Customer Success Manager opening. I'd like to set up a 20-minute intro call to learn more about your background and walk you through the role. Does Friday, 13 November 2026 at 12:00 IST or Monday, 16 November 2026 at 17:00 IST work for you?\n\nTalk soon,\nAnkit"
+  },
+  {
+    "id": "email-set-061",
+    "label": "interview_invite",
+    "subject": "Panel interview scheduled: Mechanical Design Engineer",
+    "body": "Dear Vikram,\n\nYour panel interview for the Mechanical Design Engineer (CATIA V5) role is scheduled for Thursday, 26 November 2026, 2:30-3:30 PM IST on Microsoft Teams. The panel includes our design head and two senior engineers. The joining link is in the attached calendar invite. Please test your audio and screen-share beforehand.\n\nBest regards,\nTorvane Automotive HR"
+  },
+  {
+    "id": "email-set-062",
+    "label": "info_request",
+    "subject": "Pre-joining documents",
+    "body": "Dear Kavya,\n\nWelcome aboard! To initiate your background verification, please upload copies of your degree certificates, mark sheets and previous employment relieving letters on our onboarding portal (onboard.meridianadvisory.example.com) by Monday, 30 November 2026.\n\nRegards,\nNikhil, HR Operations"
+  },
+  {
+    "id": "email-set-063",
+    "label": "other",
+    "subject": "Ankit accepted your invitation",
+    "body": "Hi Nikita,\n\nAnkit Malhotra, Recruiter at Kindleaf, accepted your invitation to connect. Send a message to start a conversation.\n\nYou now have 214 connections.\n\nThe Hirewise Team"
+  },
+  {
+    "id": "email-set-064",
+    "label": "assessment",
+    "subject": "HackerRank Test - Software Engineer | Finlytic",
+    "body": "Hi Rohan,\n\nThank you for applying to Finlytic. As the first step, please complete our online coding assessment on HackerRank: https://www.hackerrank.com/test/example-finlytic-se. The test has 3 problems and must be completed in 90 minutes in one sitting. The link expires on Friday, 20 November 2026 at 11:59 PM IST.\n\nGood luck!\nFinlytic Recruiting"
+  },
+  {
+    "id": "email-set-065",
+    "label": "assessment",
+    "subject": "Excel test - Accounts Executive",
+    "body": "Hi Rakesh,\n\nThanks for your application. Please complete the attached Excel exercise (pivot tables, VLOOKUP/XLOOKUP and a bank reconciliation) and send the completed file back to us by Saturday, 21 November 2026, 5 PM. It should take about an hour.\n\nRegards,\nHaven Co-living Finance Team"
+  },
+  {
+    "id": "email-set-066",
+    "label": "rejection",
+    "subject": "Your application for Staff SRE",
+    "body": "Hi Vivek,\n\nThanks for your interest in the Staff Site Reliability Engineer role at Northpeak. We've reviewed your application carefully and, unfortunately, we won't be able to move your application forward at this stage.\n\nWe wish you the best of luck.\n\nNorthpeak Recruiting"
+  },
+  {
+    "id": "email-set-067",
+    "label": "interview_invite",
+    "subject": "Invitation: GD and Personal Interview - Management Trainee",
+    "body": "Dear Ritesh,\n\nWe are pleased to inform you that you have been shortlisted for the Group Discussion and Personal Interview for the Management Trainee program at Sunmark Foods. Date: Wednesday, 9 December 2026, 9:00 AM. Venue: Sunmark Foods Corporate Office, Lower Parel, Mumbai. Please bring your ID proof and mark sheets.\n\nRegards,\nCampus Relations"
+  },
+  {
+    "id": "email-set-068",
+    "label": "interview_invite",
+    "subject": "Demo class invitation - Online Math Tutor",
+    "body": "Hi Prakash,\n\nThank you for applying to teach with Tutorly. As the next step, we'd like you to take a 20-minute demo class on any Class 8 algebra topic with our academic head, Mrs. Fernandes, on Saturday, 28 November 2026 at 6:00 PM over Zoom. Please prepare as you would for a real batch.\n\nRegards,\nTutorly Academics Team"
+  },
+  {
+    "id": "email-set-069",
+    "label": "rejection",
+    "subject": "Associate Consultant - Meridian Advisory",
+    "body": "Dear Kavya,\n\nWe regret to inform you that, following your case interviews, you have not been selected to proceed to the final round for the Associate Consultant position. The competition this year was exceptionally strong.\n\nThank you for your interest in Meridian Advisory.\n\nKind regards,\nMeridian Advisory Recruiting"
+  },
+  {
+    "id": "email-set-070",
+    "label": "rejection",
+    "subject": "Application status update: Not selected",
+    "body": "Hi Prateek,\n\nThe status of your application for 'QA Automation Engineer' at Qualitrix Software has been updated to: Not selected.\n\nDon't be discouraged - there are 120+ similar jobs waiting for you. View recommended jobs in your Naukri app.\n\nTeam Naukri"
+  },
+  {
+    "id": "email-set-071",
+    "label": "info_request",
+    "subject": "Documents for CTC verification",
+    "body": "Dear Rakesh,\n\nAs discussed on our call, please share your last three months' salary slips and your current appointment letter so that we can verify your current compensation before releasing the offer. You can upload them to our secure portal or reply to this email.\n\nRegards,\nHaven Co-living HR"
+  },
+  {
+    "id": "email-set-072",
+    "label": "rejection",
+    "subject": "Assessment result - Graduate Engineer Trainee",
+    "body": "Dear Candidate,\n\nThank you for appearing for the online assessment for the Graduate Engineer Trainee role at Brightwave Systems. We regret to inform you that your score did not meet the cut-off required to move to the interview round.\n\nWe encourage you to apply again in future drives.\n\nBrightwave Campus Team"
+  },
+  {
+    "id": "email-set-073",
+    "label": "info_request",
+    "subject": "Academic transcripts",
+    "body": "Dear Ananya,\n\nThank you for applying to the Graduate Analyst Programme. Please upload your official academic transcripts showing your CGPA for all completed semesters to your candidate profile by Tuesday, 8 December 2026.\n\nRegards,\nGraduate Recruitment"
+  },
+  {
+    "id": "email-set-074",
+    "label": "assessment",
+    "subject": "Online Test Admit Card - Junior Engineer (Civil)",
+    "body": "Dear Applicant,\n\nYour admit card for the computer-based written examination for the post of Junior Engineer (Civil) is now available on the recruitment portal. Exam date: Sunday, 13 December 2026, 10:00 AM to 12:00 PM. Centre details are printed on the admit card. Carry the admit card and an original photo ID.\n\nNavapur Municipal Corporation, Recruitment Cell"
+  },
+  {
+    "id": "email-set-075",
+    "label": "assessment",
+    "subject": "Reminder: your assessment expires in 48 hours",
+    "body": "Hi Amit,\n\nThis is a friendly reminder that your Codility assessment for the Backend Developer position at Ledgerline has not yet been started. The link will expire on Tuesday, 24 November 2026. If you've had any technical difficulties, please reply to this email and we'll help.\n\nhttps://app.codility.com/test/example-ledgerline\n\nLedgerline Talent"
+  },
+  {
+    "id": "email-set-076",
+    "label": "rejection",
+    "subject": "Status of your candidature - Mechanical Design Engineer",
+    "body": "Dear Vikram,\n\nWith reference to your interview for the post of Mechanical Design Engineer (CATIA V5), we would like to inform you that your candidature has not been considered for further process at this time.\n\nThank you for your interest in Torvane Automotive.\n\nHR Department"
+  },
+  {
+    "id": "email-set-077",
+    "label": "info_request",
+    "subject": "Candidate Details Form",
+    "body": "Dear Candidate,\n\nGreetings from Brightwave Systems! To complete your registration for the off-campus drive, please fill in the candidate details form (name, college, CGPA, backlogs and graduation year) using the link below by Monday, 16 November 2026.\n\nhttps://forms.example.com/brightwave-ocd-2026\n\nRegards,\nBrightwave Campus Team"
+  },
+  {
+    "id": "email-set-078",
+    "label": "rejection",
+    "subject": "Re: Video editor gig",
+    "body": "Hi there,\n\nThanks for sending over your reel, there's some really nice work in there. We've decided you're not the right fit for the channel at this time, as we're after a faster, more meme-heavy style. Hope you find a great project soon!\n\nBest,\nSpice Route Kitchen"
+  },
+  {
+    "id": "email-set-079",
+    "label": "assessment",
+    "subject": "Recruiter has shared an assessment with you",
+    "body": "Hi Prateek,\n\nQualitrix Software has sent you an assessment for the role 'QA Automation Engineer'. Assessment: Selenium and Java fundamentals, 40 minutes. Complete before: 23 November 2026.\n\nTake the assessment from the 'Assessments' tab in your Naukri app or on the website.\n\nTeam Naukri"
+  },
+  {
+    "id": "email-set-080",
+    "label": "assessment",
+    "subject": "Take-home assignment: Frontend Engineer",
+    "body": "Hi Tanvi,\n\nThanks for the chat yesterday! The next step is a take-home assignment: build a small React app that lists and filters products from the attached JSON file. We expect it to take 3-4 hours. Please share a GitHub link by Monday, 30 November 2026, 10 AM IST. We'll then discuss your solution together in the next round.\n\nCheers,\nSwati"
+  },
+  {
+    "id": "email-set-081",
+    "label": "other",
+    "subject": "Top companies hiring this week",
+    "body": "Hi there,\n\nThis week's top hiring companies on Hirewise: Northpeak (32 open roles), Brightlane (18), Corvane Insurance (25) and Zipkart (60+). Plus, walk-in drives in Pune, Chennai and Noida between 16 and 21 November 2026.\n\nBrowse jobs\n\nThe Hirewise Team"
+  },
+  {
+    "id": "email-set-082",
+    "label": "interview_invite",
+    "subject": "Campus Placement 2026 - Interview Schedule",
+    "body": "Dear Students,\n\nThe following candidates are shortlisted for interviews with Vantage Analytics on Friday, 4 December 2026 in the Placement Cell, Block C:\n- 21CS034 Aditi Rao, 9:30 AM\n- 21CS051 Farhan Ali, 10:15 AM\n- 21IT017 Sneha Pillai, 11:00 AM\n\nPlease be in formal attire and carry two copies of your resume.\n\nTraining and Placement Office"
+  },
+  {
+    "id": "email-set-083",
+    "label": "assessment",
+    "subject": "New Codility link for your assessment",
+    "body": "Hi Kunal,\n\nSorry about the technical issue during your earlier attempt. We have reset your Codility assessment. Please use the new link below; it is valid until Wednesday, 2 December 2026. Your previous attempt will not be considered.\n\nhttps://app.codility.com/test/example-reset\n\nBest regards,\nNorthpeak Recruiting"
+  },
+  {
+    "id": "email-set-084",
+    "label": "other",
+    "subject": "Get your resume rewritten by experts",
+    "body": "Hi Prateek,\n\nIs your resume ATS-friendly? 75% of resumes are filtered out before a human ever sees them. Our certified writers will rewrite your resume and LinkedIn profile in 5 days. Use code NOV26 for 30% off until 30 November 2026.\n\nGet started\n\nResumePro Services"
+  },
+  {
+    "id": "email-set-085",
+    "label": "interview_invite",
+    "subject": "Final round with our VP of Engineering",
+    "body": "Hi Arjun,\n\nGreat news: the panel would like you to meet Deepak Menon, our VP of Engineering, for the final round. It's a 45-minute conversation about leadership, how you approach technical trade-offs and what you're looking for next. Please choose a slot via https://calendly.com/northpeak-recruiting/final-round. Slots are available from 1 to 4 December 2026.\n\nCheers,\nLaura, Northpeak Recruiting"
+  },
+  {
+    "id": "email-set-086",
+    "label": "assessment",
+    "subject": "Codility assessment for Backend Developer role",
+    "body": "Hello Amit,\n\nYou are invited to take a Codility assessment for the Backend Developer position at Ledgerline. Duration: 120 minutes, 2 tasks in Python. Please complete it by Tuesday, 24 November 2026. Start here: https://app.codility.com/test/example-ledgerline\n\nYou can use any resources except help from other people.\n\nBest,\nLedgerline Talent"
+  },
+  {
+    "id": "email-set-087",
+    "label": "interview_invite",
+    "subject": "Meeting with the hiring manager",
+    "body": "Hi Pooja,\n\nThank you for your interest in the Marketing Manager role at Dewbloom. Shreya, our Head of Brand, would like to speak with you about the role and your campaign work. Please book a 40-minute slot on her calendar here: https://calendly.com/dewbloom-shreya/40min. She has openings until 27 November 2026.\n\nWarm regards,\nPeople Team, Dewbloom"
+  },
+  {
+    "id": "email-set-088",
+    "label": "other",
+    "subject": "Update on the Operations Analyst role",
+    "body": "Hi Karthik,\n\nThank you for your patience. We wanted to let you know that the Operations Analyst role has been put on hold while we finalise next year's budget. Your application remains active, and we expect to resume the process in January 2027. We'll be in touch then.\n\nBest regards,\nTalent Team"
+  },
+  {
+    "id": "email-set-089",
+    "label": "rejection",
+    "subject": "Frontend Engineer - next steps",
+    "body": "Hi Tanvi,\n\nThank you for completing the take-home and walking us through it. Unfortunately, we won't be moving ahead with your application for the Frontend Engineer role. The team felt the solution didn't cover some of the state management requirements we focus on.\n\nThanks again for your time and effort.\n\nSwati, Talent Team"
+  },
+  {
+    "id": "email-set-090",
+    "label": "info_request",
+    "subject": "Portfolio link",
+    "body": "Hi Kabir,\n\nThanks for applying for the Product Designer II position. I noticed your application didn't include a portfolio link. Could you share one (Behance, Dribbble, personal site or a PDF) so our design lead can review your work? A password is fine if you share it with us.\n\nThanks,\nCartwheel Recruiting"
+  },
+  {
+    "id": "email-set-091",
+    "label": "rejection",
+    "subject": "Your Lumenstack application",
+    "body": "Hi Isha,\n\nThank you so much for building the sample app and writing that tutorial; we enjoyed reading it. After a lot of discussion, we've decided to go in a different direction for the Developer Advocate role and focus on candidates with more conference speaking experience.\n\nWe really appreciate your effort.\n\nLumenstack DevRel Team"
+  },
+  {
+    "id": "email-set-092",
+    "label": "other",
+    "subject": "Thanks for stopping by our booth!",
+    "body": "Hi Sneha,\n\nIt was great to meet you at the campus career fair last week. Stay connected with Brightlane: follow our engineering blog, check out our graduate scheme opening in early 2027 and join our talent community for updates.\n\nSee you soon,\nBrightlane Early Careers"
+  },
+  {
+    "id": "email-set-093",
+    "label": "rejection",
+    "subject": "Graduate Programme application update",
+    "body": "Dear Gaurav,\n\nThank you for your application to the Corvane Graduate Programme and for completing our assessments. After careful consideration, we will not be progressing your application further on this occasion. Due to the volume of applications, we are unable to provide individual feedback.\n\nKind regards,\nEarly Careers Team"
+  },
+  {
+    "id": "email-set-094",
+    "label": "rejection",
+    "subject": "Re: Django developer",
+    "body": "Hey,\n\nThanks for reaching out about the Django gig and for sending your portfolio. We've decided to go with another developer who has worked on our exact stack before. Best of luck with your search!\n\nCheers,\nTom"
+  },
+  {
+    "id": "email-set-095",
+    "label": "info_request",
+    "subject": "PAN and UAN for BGV",
+    "body": "Dear Pranav,\n\nThank you for accepting our offer. For background verification and PF transfer, please enter your PAN and UAN numbers in the 'Personal Details' section of the onboarding portal. Please do not send these details over email.\n\nRegards,\nQuillstack HR Operations"
+  },
+  {
+    "id": "email-set-096",
+    "label": "other",
+    "subject": "You've been referred to Quillstack",
+    "body": "Hi Aman,\n\nYour friend Kunal Verma has referred you for the Software Engineer I role at Quillstack Technologies. Your profile has been added to our referral pipeline, and our recruiting team will review it shortly.\n\nQuillstack Recruiting\n(This is an automated message.)"
+  },
+  {
+    "id": "email-set-097",
+    "label": "interview_invite",
+    "subject": "Congrats! You've cleared the coding round",
+    "body": "Hi Ishaan,\n\nWell done on the online coding test, you scored in the top bracket. The next step is a 60-minute technical interview with one of our senior engineers, focusing on data structures and a small design problem. Please choose a slot here: https://calendly.com/quillstack-eng/tech-round. Slots are open from 23 to 27 November 2026.\n\nBest,\nQuillstack Recruiting"
+  },
+  {
+    "id": "email-set-098",
+    "label": "interview_invite",
+    "subject": "HR discussion - Senior Data Analyst",
+    "body": "Hi Sana,\n\nCongratulations on clearing the technical rounds! The next step is an HR discussion with our people partner, Ritu. It will be a 30-minute phone call covering your career goals, the team structure and benefits. Ritu will call you on Wednesday, 25 November 2026 at 4 PM unless you'd prefer another time.\n\nRegards,\nCorvane Talent Acquisition"
+  },
+  {
+    "id": "email-set-099",
+    "label": "rejection",
+    "subject": "Thank you for your interest in Kindleaf",
+    "body": "Hi Nikita,\n\nThank you for applying for the Customer Success Manager role. While your background is impressive, we've decided not to proceed with your application for this position. We'd like to keep your profile in our talent pool and may reach out if a suitable role opens up in the next six months.\n\nBest wishes,\nKindleaf Hiring Team"
+  },
+  {
+    "id": "email-set-100",
+    "label": "info_request",
+    "subject": "Reference details",
+    "body": "Dear Kavya,\n\nAs part of our final checks, could you please share the names, designations and contact details of two professional references, at least one of whom should be a former manager? We will only contact them after letting you know.\n\nKind regards,\nMeridian Advisory Recruiting"
+  },
+  {
+    "id": "email-set-101",
+    "label": "assessment",
+    "subject": "HackerEarth Online Assessment - Graduate Engineer Trainee",
+    "body": "Dear Candidate,\n\nYou have been shortlisted for the online assessment for the Graduate Engineer Trainee role at Brightwave Systems. The test includes aptitude, verbal reasoning and two coding questions. Window: 18 November 2026, 10:00 AM to 19 November 2026, 10:00 PM. Login: https://assessment.hackerearth.com/example-brightwave\n\nEnsure a stable internet connection and webcam.\n\nBrightwave Campus Team"
+  },
+  {
+    "id": "email-set-102",
+    "label": "interview_invite",
+    "subject": "Next steps: Product Analyst role at Cartwheel",
+    "body": "Hi Meera,\n\nThe team enjoyed reading your application. Would any of these times work for a 30-minute conversation with our analytics lead?\n- Thursday, 19 November 2026, 11:00 IST\n- Friday, 20 November 2026, 15:00 IST\n- Monday, 23 November 2026, 10:30 IST\n\nJust reply with your preference and I'll send a calendar invite.\n\nThanks,\nKaran Sood, Recruiting"
+  },
+  {
+    "id": "email-set-103",
+    "label": "rejection",
+    "subject": "Application outcome - Software Engineer, Payments",
+    "body": "Dear Sneha,\n\nThank you for your interest in Brightlane. We regret to inform you that your application for Software Engineer, Payments has been unsuccessful. We appreciate the effort you put into the coding exercise.\n\nWe wish you all the best.\n\nBrightlane Recruiting"
+  },
+  {
+    "id": "email-set-104",
+    "label": "assessment",
+    "subject": "Design challenge - Product Designer II",
+    "body": "Hi Kabir,\n\nThanks for your time with our design lead. The next stage is a design challenge: redesign the seller onboarding flow described in the attached brief. Please don't spend more than 4-5 hours on it. Share your Figma file and a short write-up of your decisions by Tuesday, 1 December 2026.\n\nLooking forward to it,\nCartwheel Design Team"
+  },
+  {
+    "id": "email-set-105",
+    "label": "interview_invite",
+    "subject": "Invitation: Interview - Data Analyst @ Wed 2 Dec 2026 3pm - 4pm (IST)",
+    "body": "You have been invited to the following event.\n\nInterview - Data Analyst\nWhen: Wednesday, 2 December 2026, 3pm - 4pm (India Standard Time)\nJoining info: meet.google.com/abc-defg-hij\nWho: Pallavi Shah (organiser), Mohit Arora, you\n\nAgenda: SQL walkthrough and discussion of your dashboard project.\n\nGoing? Yes - Maybe - No"
+  },
+  {
+    "id": "email-set-106",
+    "label": "info_request",
+    "subject": "Shift preference",
+    "body": "Dear Candidate,\n\nThank you for applying to the Customer Support Associate role. This process runs in rotational shifts, including night shifts once a month. Please reply to confirm whether you are comfortable with rotational shifts and let us know if you have any constraints.\n\nRegards,\nPinecrest Recruitment"
+  },
+  {
+    "id": "email-set-107",
+    "label": "interview_invite",
+    "subject": "Case interview - Associate Consultant, Meridian Advisory",
+    "body": "Dear Kavya,\n\nThank you for your application. We are pleased to invite you to the first round of case interviews for the Associate Consultant position. You will have two 45-minute case interviews back to back on Wednesday, 2 December 2026, starting at 10:00 AM IST, via Zoom. Each will include a short fit discussion.\n\nKind regards,\nMeridian Advisory Recruiting"
+  },
+  {
+    "id": "email-set-108",
+    "label": "assessment",
+    "subject": "Take-home: churn prediction exercise",
+    "body": "Hi Farah,\n\nAs the next step for the Data Scientist role, please find attached an anonymised customer dataset. Build a churn prediction model and summarise your approach, evaluation and key findings in a notebook. We expect about 5-6 hours of work. Please submit a GitHub link or zipped notebook by Friday, 11 December 2026.\n\nThanks,\nAnalytics Hiring, Kindleaf"
+  },
+  {
+    "id": "email-set-109",
+    "label": "rejection",
+    "subject": "Junior Data Analyst application",
+    "body": "Hi Anil,\n\nThank you for applying for the Junior Data Analyst role. Having reviewed your profile, we feel your extensive experience is well beyond what this entry-level position requires, and we don't think it would be a good match for your career goals. We won't be progressing your application, but please look at our senior openings.\n\nBest,\nTalent Team"
+  },
+  {
+    "id": "email-set-110",
+    "label": "assessment",
+    "subject": "Coding challenge - Developer Advocate",
+    "body": "Hi Isha,\n\nThanks for applying to Lumenstack! For the Developer Advocate role, we'd like you to build a small sample app using our open-source database and write a short tutorial (around 1,000 words) explaining how you built it. Please share a public GitHub repository with the code and the tutorial by Thursday, 17 December 2026.\n\nHappy building,\nDevRel Team"
+  },
+  {
+    "id": "email-set-111",
+    "label": "rejection",
+    "subject": "Thank you for interviewing with Cartwheel",
+    "body": "Hi Meera,\n\nThank you for meeting with our team for the Product Analyst role. Everyone enjoyed the conversation. We've chosen to proceed with a candidate whose experience in marketplace analytics is a closer match for this particular role.\n\nWe'd be glad to stay in touch, and I hope our paths cross again.\n\nBest,\nKaran"
+  },
+  {
+    "id": "email-set-112",
+    "label": "assessment",
+    "subject": "Next step: online coding exercise",
+    "body": "Hi Sneha,\n\nThanks for applying to the Software Engineer, Payments role at Brightlane. Before we schedule interviews, we ask all candidates to complete a 70-minute coding exercise in Java or Kotlin on CodeSignal. Please complete it by Monday, 7 December 2026.\n\nhttps://app.codesignal.com/example-brightlane\n\nKind regards,\nBrightlane Recruiting"
+  },
+  {
+    "id": "email-set-113",
+    "label": "info_request",
+    "subject": "Details required - Java Developer opening",
+    "body": "Hi Sachin,\n\nI came across your profile for a Java Developer opening with our client in Pune. Before I share your profile, could you please send me the following:\n- Total experience\n- Relevant experience in Spring Boot\n- Current CTC\n- Expected CTC\n- Notice period\n- Current location\n\nThanks & Regards,\nPriya, Workforce Avenue"
+  },
+  {
+    "id": "email-set-114",
+    "label": "interview_invite",
+    "subject": "Face-to-face interview - QA Automation Engineer | Qualitrix",
+    "body": "Dear Candidate,\n\nWe are pleased to invite you for a face-to-face technical interview for the QA Automation Engineer position on Tuesday, 24 November 2026 at 11:00 AM.\n\nVenue: Qualitrix Software, 4th Floor, Tower B, Hinjewadi Phase 2, Pune.\n\nPlease carry a printed copy of your resume and a government photo ID. Kindly confirm your availability by replying to this email.\n\nRegards,\nHR Team, Qualitrix"
+  },
+  {
+    "id": "email-set-115",
+    "label": "interview_invite",
+    "subject": "Interview Schedule - Relationship Officer - Avantis SFB",
+    "body": "Dear Candidate,\n\nGreetings from Avantis Small Finance Bank. Your profile has been shortlisted for the post of Relationship Officer. Kindly confirm your availability for a F2F interview at our Madurai regional office on Monday, 30 November 2026 at 10:30 AM. Please report 15 minutes early.\n\nThanks & Regards,\nRecruitment Team"
+  },
+  {
+    "id": "email-set-116",
+    "label": "other",
+    "subject": "Join our virtual career fair on 5 December",
+    "body": "Hi there,\n\nMeet hiring teams from 40+ companies at the Hirewise Virtual Career Fair on Saturday, 5 December 2026, 10 AM-5 PM IST. Chat live with recruiters, attend resume workshops and explore openings across tech, finance and operations. Registration is free.\n\nRegister now\n\nThe Hirewise Team"
+  },
+  {
+    "id": "email-set-117",
+    "label": "other",
+    "subject": "Welcome to Kindleaf Careers",
+    "body": "Hi Nikita,\n\nYour candidate account on Kindleaf Careers has been created. You can now track your applications, save jobs and set up job alerts. To get started, log in with the email address you used to register.\n\nKindleaf Careers"
+  },
+  {
+    "id": "email-set-118",
+    "label": "assessment",
+    "subject": "Versant English Test - Customer Support Associate",
+    "body": "Dear Candidate,\n\nCongratulations on clearing the HR screening for the Customer Support Associate role at Pinecrest Fintech. Please complete the Versant English test (about 50 minutes) using the test ID below. The test must be taken on a laptop with a headset by Friday, 13 November 2026.\n\nTest ID: 0000-EXAMPLE-11\n\nRegards,\nPinecrest Recruitment"
+  },
+  {
+    "id": "email-set-119",
+    "label": "info_request",
+    "subject": "The employer has a few questions for you",
+    "body": "Hi Harsh,\n\nTalentcrest Partners has asked you to answer 2 screening questions for 'Senior Product Manager':\n1. How many years have you managed B2B products?\n2. Are you willing to work from Gurugram 3 days a week?\n\nAnswer from your Hirewise inbox to keep your application active.\n\nThe Hirewise Team"
+  },
+  {
+    "id": "email-set-120",
+    "label": "other",
+    "subject": "Application withdrawn",
+    "body": "Hi Tanvi,\n\nThis is to confirm that you have withdrawn your application for the Frontend Engineer role at Swiftcart. If this was a mistake, you can re-apply from the job page while the role remains open.\n\nSwiftcart Careers"
+  }
+]

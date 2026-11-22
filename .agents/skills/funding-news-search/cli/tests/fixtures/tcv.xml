@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Venture Capital News | TechCrunch</title>
+	<atom:link href="https://techcrunch.com/category/venture/feed/" rel="self" type="application/rss+xml" />
+	<link>https://techcrunch.com/category/venture/</link>
+	<description>Startup and Technology News</description>
+	<lastBuildDate>Tue, 10 Nov 2026 21:51:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9.11</generator>
+
+<image>
+	<url>https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32</url>
+	<title>Venture Capital News | TechCrunch</title>
+	<link>https://techcrunch.com/category/venture/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Proximal Ventures raises debut fund to back startups bringing AI to drug development</title>
+		<link>https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/</link>
+		
+		<dc:creator><![CDATA[Marina Temkin]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2026 20:47:05 +0000</pubDate>
+				<category><![CDATA[Biotech & Health]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[drug discovery]]></category>
+		<category><![CDATA[signalfire]]></category>
+		<category><![CDATA[Solo VC]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3187132</guid>
+
+					<description><![CDATA[Former SignalFire investor Sahir Raoof raises $27.5 million for new fund targeting AI in pharma.]]></description>
+		
+		
+		
+			</item>
+<item>
+		<title>Ex-Palantir execs launch Dream with $17M from a16z to build AI world models for construction</title>
+		<link>https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/</link>
+		
+		<dc:creator><![CDATA[Marina Temkin]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2026 16:21:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[Andreessen Horowitz]]></category>
+		<category><![CDATA[architecture]]></category>
+		<category><![CDATA[dream]]></category>
+		<category><![CDATA[Palantir]]></category>
+		<category><![CDATA[world models]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3183106</guid>
+
+					<description><![CDATA[Dream is grounded in real physics and construction standards. Just as LLMs learn from text, Dream's world model is trained on more than 100 million square feet of building data gathered from permit archives across the United States.]]></description>
+		
+		
+		
+			</item>
+<item>
+		<title>Trajectory raises $45M to make AI model training accessible to nontechnical experts</title>
+		<link>https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/</link>
+		
+		<dc:creator><![CDATA[Marina Temkin]]></dc:creator>
+		<pubDate>Mon, 02 Nov 2026 23:13:53 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[fine-tuning]]></category>
+		<category><![CDATA[Sequoia]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3184455</guid>
+
+					<description><![CDATA[The one-year-old startup is now valued at $300 million.]]></description>
+		
+		
+		
+			</item>
+<item>
+		<title>Sequoia partners reportedly blindsided when Roelof Botha joined SpaceX board</title>
+		<link>https://techcrunch.com/2026/11/08/sequoia-partners-reportedly-blindsided-when-roelof-botha-joined-spacex-board/</link>
+		
+		<dc:creator><![CDATA[Anthony Ha]]></dc:creator>
+		<pubDate>Sun, 08 Nov 2026 19:51:30 +0000</pubDate>
+				<category><![CDATA[Venture]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[roelof botha]]></category>
+		<category><![CDATA[Sequoia Capital]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3186115</guid>
+
+					<description><![CDATA[A new report claims Sequoia's recent changes undo the legacy of the firm's former steward.]]></description>
+		
+		
+		
+			</item>
+</channel>
+</rss>
