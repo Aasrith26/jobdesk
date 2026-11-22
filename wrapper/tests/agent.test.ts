@@ -120,7 +120,27 @@ describe("applying: prepare, review, confirm, one tap, applied", () => {
     const r = await prepare(p, readConfig(p.config), { key: "r1", url: "https://e.com/c", company: "Cove", role: "Sales Lead" }, { exec: drafting(p) })
     expect(r.ok).toBe(false)
     expect(r.report).toContain("sales role")
-    expect(readApps(p).r1.stage).toBe("stopped")
+    expect(readApps(p).r1).toMatchObject({ stage: "stopped", report: expect.stringContaining("sales role") })
+    // The page shows the reasons, the posting link and a way to try again.
+    const html = (await import("../src/dashboard/page.ts")).renderPage("t")
+    expect(html).toContain("Why it stopped")
+    expect(html).toContain("View posting")
+  })
+  test("spending limit: the user's own number, or none at all", async () => {
+    const { budgetLeft, budgetText, runClaude } = await import("../src/lib/claude.ts")
+    const p = ws()
+    const cfg = readConfig(p.config)
+    cfg.monthly_budget_usd = null
+    writeConfig(p.config, cfg)
+    appendFileSync(p.costs, JSON.stringify({ at: new Date().toISOString(), task: "draft", model: "sonnet", usd: 50, ok: true }) + "\n")
+    expect(budgetLeft(p.costs, cfg)).toBe(Infinity)
+    expect(budgetText(p.costs, cfg)).toBe("No spending limit. $50.00 spent this month.")
+    let ran = false
+    const r = await runClaude({ root: p.root, ledger: p.costs, cfg, task: "chat", prompt: "x", allowedTools: [], exec: async () => { ran = true; return ok("hi") } })
+    expect(ran).toBe(true)
+    expect(r.ok).toBe(true)
+    cfg.monthly_budget_usd = 20
+    expect(budgetText(p.costs, cfg)).toBe("$0.00 of $20 left this month.")
   })
   test("drafted: the review lists the changes and flags what the profile doesn't support; nothing is sent", async () => {
     const p = ws()

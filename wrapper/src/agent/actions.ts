@@ -6,7 +6,7 @@ import { readConfig, writeConfig, type Config } from "../data/config.ts"
 import { readTracker, findRow, updateStatus, canonicalStatus, isFinal, followUpsSent, bucketOf } from "../data/tracker.ts"
 import { openItems } from "../data/attention.ts"
 import { react } from "../data/recommended.ts"
-import { budgetLeft, ESTIMATE_USD, type ClaudeExec } from "../lib/claude.ts"
+import { budgetText, ESTIMATE_USD, type ClaudeExec } from "../lib/claude.ts"
 import { modelFor } from "../data/config.ts"
 import { findJob, prepare, markApplied, isPreparing } from "../apply.ts"
 import { quickRank, unscored, rankEstimate } from "../rank.ts"
@@ -160,7 +160,7 @@ export async function runAction(p: Paths, action: string, o: { exec?: ClaudeExec
       return { text: items.length ? items.slice(0, 8).map((i) => `- ${i.title}`).join("\n") : "Nothing needs you right now." }
     }
     case "budget":
-      return { text: `Budget left this month: $${budgetLeft(p.costs, cfg).toFixed(2)} of $${cfg.monthly_budget_usd}.` }
+      return { text: budgetText(p.costs, cfg) }
     case "kit": {
       const j = findJob(p, arg)
       if (!j) return { text: `I couldn't tell which job "${arg}" is.` }

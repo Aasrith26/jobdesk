@@ -24,7 +24,7 @@ import { readSeen } from "../data/seen.ts"
 import { buildKit, capCheck } from "../kit.ts"
 import { ingestLink, type LinkResult } from "../links.ts"
 import { scan, isNews, type ScanSummary } from "../scan.ts"
-import { runClaude, TOOLS, budgetLeft, ESTIMATE_USD, type ClaudeExec } from "../lib/claude.ts"
+import { runClaude, TOOLS, budgetText, ESTIMATE_USD, type ClaudeExec } from "../lib/claude.ts"
 import { refreshReminders } from "../followups.ts"
 import { processInboxFolder } from "../inbox.ts"
 import { emailLabeler, modelCheckLeads } from "../safety/check.ts"
@@ -334,7 +334,7 @@ export class Bot {
         return this.cmdAnswer(chatId, arg)
       case "/budget": {
         const c = this.cfg()
-        return this.say(chatId, `Plan: ${c.tier}. Budget: $${c.monthly_budget_usd} a month. Left: $${budgetLeft(this.p.costs, c).toFixed(2)}.`)
+        return this.say(chatId, `Plan: ${c.tier}. ${budgetText(this.p.costs, c)}`)
       }
       case "/ask":
         return this.cmdAsk(chatId, arg)
@@ -824,7 +824,7 @@ export class Bot {
       case "attention": return this.cmdAttention(chatId)
       case "budget": {
         const c = this.cfg()
-        return this.say(chatId, `Plan: ${c.tier}. Budget: $${c.monthly_budget_usd} a month. Left: $${budgetLeft(this.p.costs, c).toFixed(2)}.`)
+        return this.say(chatId, `Plan: ${c.tier}. ${budgetText(this.p.costs, c)}`)
       }
       case "kit": return this.resolveJob(arg) ? this.cmdKit(chatId, arg) : undefined
     }
@@ -1152,7 +1152,7 @@ export function describeDaily(cfg: Config): string {
         cfg.approval_level === "L2" ? `Sending: only forms on sites you trust (${cfg.trusted_ats.join(", ") || "none yet"}) go out without a tap. Everything else comes to you.`
           : cfg.approval_level === "L1" ? "Sending: I fill forms where the site allows it, and nothing goes out until you tap Send. Elsewhere you get the kit."
           : "Sending: you send every application yourself. I get the CV, letter and kit ready.",
-        `Limits: ${cfg.daily_application_cap} applications a day and $${cfg.monthly_budget_usd} a month.`,
+        `Limits: ${cfg.daily_application_cap} applications a day${cfg.monthly_budget_usd === null ? ", no spending limit" : ` and $${cfg.monthly_budget_usd} a month`}.`,
       )
     }
   }

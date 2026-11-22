@@ -10,7 +10,7 @@ import { readTracker, canonicalStatus } from "../data/tracker.ts"
 import { readSeen } from "../data/seen.ts"
 import { openItems } from "../data/attention.ts"
 import { dueFollowUps } from "../followups.ts"
-import { budgetLeft } from "../lib/claude.ts"
+import { budgetText } from "../lib/claude.ts"
 import { policyFor } from "../fill/policy.ts"
 import { today } from "../lib/store.ts"
 import { freshPicks } from "../recommend.ts"
@@ -67,7 +67,7 @@ export function snapshot(p: Paths, cfg: Config, lastList: string[], now: Date = 
     `- Sending: ${cfg.approval_level === "L0" ? "kit only, they apply themselves" : cfg.approval_level === "L1" ? "forms are filled, they approve each send" : "forms on trusted sites are sent without a second tap"}`,
     `- Daily search: ${cfg.daily.search ? `on at ${cfg.daily.time}, strong matches: ${cfg.daily.apply === "auto" ? "started automatically" : cfg.daily.apply === "ask" ? "offered with an Apply button" : "listed only"}` : "off"}`,
     `- Automatic follow-up drafts: ${cfg.daily.followups ? "on" : "off"}`,
-    `- Limit: ${cfg.daily_application_cap} applications a day. Budget left this month: $${budgetLeft(p.costs, cfg).toFixed(2)}.`,
+    `- Limit: ${cfg.daily_application_cap} applications a day. ${budgetText(p.costs, cfg)}`,
   )
   return lines.join("\n")
 }

@@ -382,6 +382,18 @@ export function startDashboard(p: Paths, port: number, opts: DashboardOpts = {})
         if (url.pathname === "/api/agent/forget") {
           return json({ ok: true, notes: removeNote(p, Number(body.index)) })
         }
+        if (url.pathname === "/api/settings/budget") {
+          // { limit: null } removes the cap; { limit: 25 } caps paid features at $25 a month.
+          const cfg = readConfig(p.config)
+          if (body.limit === null || body.limit === "") cfg.monthly_budget_usd = null
+          else {
+            const n = Number(body.limit)
+            if (!Number.isFinite(n) || n < 0) return json({ error: "Enter an amount in dollars, or choose No limit." }, 400)
+            cfg.monthly_budget_usd = n
+          }
+          writeConfig(p.config, cfg)
+          return json({ ok: true })
+        }
         if (url.pathname === "/api/settings/sending") {
           const level = String(body.level)
           if (level !== "L0" && level !== "L1") return json({ error: "Choose kit only, or fill and confirm." }, 400)

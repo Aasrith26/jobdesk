@@ -29,6 +29,8 @@ export interface AppState {
   updated: string
   /** Why it stopped or failed, in plain words (e.g. /apply's own fit verdict). */
   note?: string
+  /** /apply's own words when it stopped or failed (its fit verdict, a posting it couldn't read). */
+  report?: string
   usd?: number
 }
 
@@ -101,13 +103,13 @@ export function prepare(p: Paths, cfg: Config, job: JobRef, o: { exec?: ClaudeEx
     if (!row?.cv_file) {
       const cap = capCheck(p, cfg)
       if (!cap.ok) return { ok: false, state: setApp(p, job, { stage: "stopped", note: cap.message }), error: cap.message }
-      setApp(p, job, { stage: "drafting", note: undefined, started: nowIso() })
+      setApp(p, job, { stage: "drafting", note: undefined, report: undefined, started: nowIso() })
       const r = await runClaude({ root: p.root, ledger: p.costs, cfg, task: "draft", prompt: DRAFT_PROMPT(job.url), allowedTools: TOOLS.apply, exec: o.exec })
       if (r.skipped) return { ok: false, state: setApp(p, job, { stage: "failed", note: r.error, usd: r.usd }), error: r.error }
       row = trackerRowFor(p, job.url)
       if (!row?.cv_file) {
-        const report = r.text.trim().slice(0, 2500)
-        const state = setApp(p, job, { stage: r.ok ? "stopped" : "failed", note: r.ok ? "It stopped after checking the fit and wrote no CV. Its reasons are in the report." : r.error ?? "The drafting run didn't finish.", usd: r.usd })
+        const report = (r.text.trim() || r.error || "").slice(0, 6000)
+        const state = setApp(p, job, { stage: r.ok ? "stopped" : "failed", note: r.ok ? "It stopped before writing a CV. Open the report to see why." : r.error ?? "The drafting run didn't finish.", report, usd: r.usd })
         return { ok: false, state, report, error: state.note }
       }
       setApp(p, job, { usd: r.usd })

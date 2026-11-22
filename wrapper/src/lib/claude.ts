@@ -23,8 +23,18 @@ export function monthSpend(ledger: string, now: Date = new Date()): number {
     .reduce((s, e) => s + (Number.isFinite(e.usd) ? e.usd : 0), 0)
 }
 
+/** What's left of the user's monthly cap. No cap (null) means Infinity. */
 export function budgetLeft(ledger: string, cfg: Config): number {
+  if (cfg.monthly_budget_usd === null) return Infinity
   return Math.max(0, cfg.monthly_budget_usd - monthSpend(ledger))
+}
+
+/** One line for people: "$4.20 of $10 left this month" or "No spending limit. $4.20 spent this month." */
+export function budgetText(ledger: string, cfg: Config): string {
+  const spent = monthSpend(ledger)
+  return cfg.monthly_budget_usd === null
+    ? `No spending limit. $${spent.toFixed(2)} spent this month.`
+    : `$${budgetLeft(ledger, cfg).toFixed(2)} of $${cfg.monthly_budget_usd} left this month.`
 }
 
 /** Rough per-task estimate shown before a run (INC-3); actuals come from Claude's own report. */

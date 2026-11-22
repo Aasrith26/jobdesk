@@ -13,7 +13,7 @@ import { readShown } from "../data/recommended.ts"
 import { readTracker, canonicalStatus } from "../data/tracker.ts"
 import { openItems } from "../data/attention.ts"
 import { policyFor } from "../fill/policy.ts"
-import { budgetLeft } from "../lib/claude.ts"
+import { budgetText } from "../lib/claude.ts"
 import { unscored, profileForScoring } from "../rank.ts"
 import { readApps, findJob } from "../apply.ts"
 import { readReview } from "../review.ts"
@@ -105,7 +105,7 @@ export function callTool(ctx: ToolContext, name: string, args: Record<string, un
         minimum_fit: cfg.min_fit, roles: cfg.queries, places: cfg.locations,
         applying: cfg.approval_level === "L0" ? "kit only: they send every application themselves" : "jobdesk fills forms on supported sites and waits for their Send",
         daily_search: cfg.daily.search ? { at: cfg.daily.time, fits: cfg.daily.apply } : "off",
-        daily_limit: cfg.daily_application_cap, budget_left_usd: Number(budgetLeft(p.costs, cfg).toFixed(2)), not_scored_yet: unscored(p).length,
+        daily_limit: cfg.daily_application_cap, budget: budgetText(p.costs, cfg), not_scored_yet: unscored(p).length,
         notes_you_kept: readNotes(p),
       })
     case "remember": {

@@ -24,7 +24,7 @@ import { searchUrls, parseConnections, matchReferrals } from "../src/linkedin.ts
 import { readTracker, isFinal } from "../src/data/tracker.ts"
 import { shortlist, readSeen } from "../src/data/seen.ts"
 import { fillApplication, type ReviewCard } from "../src/fill/runner.ts"
-import { monthSpend, budgetLeft } from "../src/lib/claude.ts"
+import { monthSpend, budgetLeft, budgetText } from "../src/lib/claude.ts"
 import { compat } from "../src/compat.ts"
 import { readJsonl } from "../src/lib/store.ts"
 import { emailLabeler, modelCheckLeads } from "../src/safety/check.ts"
@@ -132,7 +132,16 @@ async function configCmd(p: Paths, cfg: Config, args: string[]): Promise<void> {
       if (!["lite", "standard", "max"].includes(val)) throw new Error("Tier must be lite, standard or max.")
       cfg.tier = val as Tier
       break
-    case "budget": cfg.monthly_budget_usd = Number(val); break
+    case "budget": {
+      // "config budget 25" caps paid features at $25 a month; "config budget off" removes the cap.
+      if (/^(off|none|no|unlimited)$/i.test(val.trim())) cfg.monthly_budget_usd = null
+      else {
+        const n = Number(val)
+        if (!val.trim() || !Number.isFinite(n) || n < 0) throw new Error("Use an amount in dollars, like: config budget 25. Or: config budget off")
+        cfg.monthly_budget_usd = n
+      }
+      break
+    }
     case "cap": cfg.daily_application_cap = Math.max(1, Math.floor(Number(val))); break
     case "level":
       if (!["L0", "L1", "L2"].includes(val)) throw new Error("Level must be L0 (kit only), L1 (fill and review) or L2 (fill and send).")
@@ -434,13 +443,13 @@ async function main(): Promise<number> {
       return 0
     case "status": {
       const rows = readTracker(p.tracker).rows
-      console.log(`Applications in tracker: ${rows.length}\nJobs found: ${readSeen(p.seen).length}\nNeeds you: ${openItems(p.attention).length}\nSpent this month: $${monthSpend(p.costs).toFixed(2)} of $${cfg.monthly_budget_usd}`)
+      console.log(`Applications in tracker: ${rows.length}\nJobs found: ${readSeen(p.seen).length}\nNeeds you: ${openItems(p.attention).length}\n${budgetText(p.costs, cfg)}`)
       return 0
     }
     case "cost": {
       const entries = readJsonl<{ at: string; task: string; model: string; usd: number }>(p.costs)
       for (const e of entries.slice(-20)) console.log(`${e.at.slice(0, 16)}  ${e.task.padEnd(8)} ${e.model.padEnd(7)} $${e.usd.toFixed(3)}`)
-      console.log(`\nThis month: $${monthSpend(p.costs).toFixed(2)}. Left: $${budgetLeft(p.costs, cfg).toFixed(2)} of $${cfg.monthly_budget_usd}.`)
+      console.log(`\n${budgetText(p.costs, cfg)}`)
       return 0
     }
     case "compat": {

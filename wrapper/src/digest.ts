@@ -5,7 +5,7 @@ import { readSeen, shortlist } from "./data/seen.ts"
 import { openItems } from "./data/attention.ts"
 import { dueFollowUps } from "./followups.ts"
 import { readTracker, bucketOf } from "./data/tracker.ts"
-import { budgetLeft } from "./lib/claude.ts"
+import { budgetText } from "./lib/claude.ts"
 import type { Config } from "./data/config.ts"
 import { readLeads } from "./data/leads.ts"
 import { freshPicks, type Pick } from "./recommend.ts"
@@ -72,6 +72,6 @@ export function composeDigest(p: Paths, cfg: Config): { text: string; jobs: Pick
   lines.push(att.length ? `${att.length} thing${att.length === 1 ? "" : "s"} need${att.length === 1 ? "s" : ""} you. Send /attention to see them.` : "Nothing needs you right now.")
   if (fu.length) lines.push(`${fu.length} application${fu.length === 1 ? " has" : "s have"} gone quiet. A short follow-up can help.`)
   lines.push(`Open applications: ${active}.`)
-  if (cfg.tier) lines.push(`Budget left this month: $${budgetLeft(p.costs, cfg).toFixed(2)}.`)
+  if (cfg.tier) lines.push(budgetText(p.costs, cfg))
   return { text: lines.join("\n"), jobs }
 }

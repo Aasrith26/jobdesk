@@ -7,7 +7,8 @@ export type ApprovalLevel = "L0" | "L1" | "L2"
 
 export interface Config {
   tier: Tier
-  monthly_budget_usd: number
+  /** The user's own monthly cap for paid features, in USD. null = no limit. */
+  monthly_budget_usd: number | null
   daily_application_cap: number
   approval_level: ApprovalLevel
   trusted_ats: string[]

@@ -65,8 +65,8 @@ th{font-size:12px;font-weight:500;color:var(--muted);text-align:left;padding:8px
 td{padding:12px 16px;border-bottom:1px solid var(--line2);vertical-align:top}
 tbody tr:last-child td{border-bottom:0}
 .t{font-weight:500;color:var(--fg)}
-a.t{text-decoration:none}
-a.t:hover{text-decoration:underline}
+a.t{text-decoration:underline;text-decoration-color:#c4c4c4;text-underline-offset:3px}
+a.t:hover{text-decoration-color:#111}
 .sub{color:var(--muted);font-size:12.5px}
 .why{max-width:460px;color:var(--fg2)}
 

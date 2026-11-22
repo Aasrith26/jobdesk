@@ -64,6 +64,7 @@ export function setupStatus(p: Paths, cfg: Config, bot?: BotStatus) {
     telegram,
     schedule: { daily: cfg.daily, digest_time: cfg.telegram.digest_time },
     sending: cfg.approval_level,
+    budget: cfg.monthly_budget_usd,
   }
 }
 
