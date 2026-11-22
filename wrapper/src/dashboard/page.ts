@@ -57,6 +57,7 @@ ${STYLE}
       <div><h1 id="page-title">Overview</h1><p id="page-sub"></p></div>
       <div id="page-actions" class="inline"></div>
     </header>
+    <div id="alerts" role="region" aria-label="Problems to fix"></div>
     <div id="tasks" aria-live="polite"></div>
     <div class="content">
       ${sections}
@@ -373,8 +374,23 @@ function applyProfileDraft(){
   $('#profile-warn').innerHTML=r.unsupported&&r.unsupported.length?'<div class="note-warn"><strong>Check these before saving. They may not be in your resume:</strong><ul>'+r.unsupported.map(u=>'<li>'+esc(u)+'</li>').join('')+'</ul></div>':'';
   say('#profile-msg','Draft ready (cost $'+(r.usd||0).toFixed(2)+'). Read it, fix anything wrong, then press Save profile. Nothing is saved until you do.');
 }
+// ---------- problems: what's missing or broken, with the command that fixes it ----------
+function alertsHtml(list){
+  const seen=seenIds();
+  const shown=list.filter(i=>i.level!=='optional'||seen.indexOf('issue:'+i.id)<0);
+  if(!shown.length)return '';
+  return shown.map((i,n)=>'<div class="alert '+i.level+'"><div class="alert-text"><strong>'+esc(i.title)+'.</strong> '+esc(i.impact)+
+    (i.fix?'<div class="alert-fix"><span class="sub">Run this in a terminal, in the jobdesk folder:</span> <code>'+esc(i.fix)+'</code></div>':'')+
+    (i.action?'<div class="sub">'+esc(i.action)+'</div>':'')+'</div><div class="row-actions">'+
+    (i.fix?'<button class="btn sm" data-copyfix="'+n+'">Copy command</button>':'')+
+    (i.id.indexOf('check:')===0?'<button class="btn sm" data-recheck>Check again</button>':'')+
+    (i.level==='optional'?'<button class="btn sm ghost" data-seen="issue:'+esc(i.id)+'">Dismiss</button>':'')+'</div></div>').join('');
+}
+let shownAlerts=[];
 function render(){
   if(!S)return;
+  shownAlerts=(S.health||[]).filter(i=>i.level!=='optional'||seenIds().indexOf('issue:'+i.id)<0);
+  $('#alerts').innerHTML=alertsHtml(S.health||[]);
   $('#tasks').innerHTML=tasksHtml(S.tasks||[]);
   applyProfileDraft();
   const fresh=S.jobs.filter(j=>j.fresh).length,ready=S.preparing.filter(a=>a.stage==='ready').length;
@@ -417,6 +433,8 @@ document.addEventListener('click',async e=>{
   if(el.id==='score-btn'){el.disabled=true;const j=await call('/api/jobs/score',{});if(j.failed)alert(j.error||'Scoring failed.');await load();return}
   if(ds.stop){el.disabled=true;el.textContent='Stopping...';await call('/api/tasks/stop',{id:ds.stop});await load();return}
   if(ds.seen){markSeen(ds.seen);render();return}
+  if(ds.copyfix!==undefined){const i=shownAlerts[Number(ds.copyfix)];try{await navigator.clipboard.writeText(i.fix);el.textContent='Copied'}catch(err){el.textContent='Select the command and copy it'}return}
+  if(ds.recheck!==undefined){el.disabled=true;el.textContent='Checking...';await call('/api/health/recheck',{});await load();return}
   if(ds.draft){
     el.disabled=true;
     const j=await call('/api/setup/profile/draft',{file:ds.draft});

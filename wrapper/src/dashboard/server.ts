@@ -35,6 +35,7 @@ import { freshPicks } from "../recommend.ts"
 import { markShown } from "../data/recommended.ts"
 import { HELP } from "../bridge/bot.ts"
 import { startTask, readTasks, requestStop } from "../tasks.ts"
+import { installIssues, runtimeIssues, sortIssues, type Issue } from "../health.ts"
 
 const TYPES: Record<string, string> = { ".pdf": "application/pdf", ".html": "text/html; charset=utf-8", ".png": "image/png", ".txt": "text/plain; charset=utf-8", ".json": "application/json" }
 
@@ -52,6 +53,8 @@ export interface DashboardOpts {
   claudeExec?: ClaudeExec
   /** Tests only: stands in for the browser form filler. */
   fillFn?: (o: FillOpts) => Promise<FillResult>
+  /** Tests only: stands in for checking what's installed. */
+  healthCheck?: () => Promise<Issue[]>
   log?: (s: string) => void
 }
 
@@ -108,6 +111,21 @@ export function startDashboard(p: Paths, port: number, opts: DashboardOpts = {})
   const proposals = new Map<string, { action: string; question: string }>()
   let proposalN = 0
   const log = opts.log ?? (() => {})
+  // What's missing on this computer: checked at start, every 10 minutes, and on "Check again".
+  let installed: Issue[] = []
+  let checkedAt = ""
+  const recheck = async () => {
+    try {
+      installed = await (opts.healthCheck ?? installIssues)()
+      checkedAt = new Date().toISOString()
+      notify()
+    } catch (e) {
+      log(`health check failed: ${(e as Error).message}`)
+    }
+  }
+  void recheck()
+  const healthTimer = setInterval(() => void recheck(), 10 * 60_000)
+  const health = () => sortIssues([...installed, ...runtimeIssues(p, readConfig(p.config), { botError: opts.service?.bot.status().error })])
   const allowedRoots = [join(p.root, "cv"), join(p.root, "cover_letters"), join(p.root, "documents"), p.kits, p.reviews, p.evidence].map((r) => resolve(r) + sep)
   const json = (v: unknown, status = 200) => new Response(JSON.stringify(v), { status, headers: { "content-type": "application/json", "cache-control": "no-store" } })
 
@@ -121,7 +139,7 @@ export function startDashboard(p: Paths, port: number, opts: DashboardOpts = {})
       if (host !== "127.0.0.1" && host !== "localhost") return new Response("Forbidden", { status: 403 })
       const sec = { "content-security-policy": "default-src 'self'; script-src 'unsafe-inline' 'self'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'", "x-content-type-options": "nosniff", "referrer-policy": "no-referrer" }
       if (req.method === "GET" && url.pathname === "/") return new Response(renderPage(token), { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store", ...sec } })
-      if (req.method === "GET" && url.pathname === "/api/state") return json(computeState(p))
+      if (req.method === "GET" && url.pathname === "/api/state") return json({ ...computeState(p), health: health(), health_checked: checkedAt })
       if (req.method === "GET" && url.pathname === "/api/setup") return json(setupStatus(p, readConfig(p.config), opts.service?.bot.status()))
       if (req.method === "GET" && url.pathname === "/api/doctor") return json(await doctor())
       if (req.method === "GET" && url.pathname === "/api/apply/review") {
@@ -382,6 +400,10 @@ export function startDashboard(p: Paths, port: number, opts: DashboardOpts = {})
         if (url.pathname === "/api/agent/forget") {
           return json({ ok: true, notes: removeNote(p, Number(body.index)) })
         }
+        if (url.pathname === "/api/health/recheck") {
+          await recheck()
+          return json({ ok: true, health: health() })
+        }
         if (url.pathname === "/api/settings/budget") {
           // { limit: null } removes the cap; { limit: 25 } caps paid features at $25 a month.
           const cfg = readConfig(p.config)
@@ -439,6 +461,7 @@ export function startDashboard(p: Paths, port: number, opts: DashboardOpts = {})
     token,
     stop: () => {
       clearInterval(poll)
+      clearInterval(healthTimer)
       clearTimeout(timer)
       for (const w of watchers) w.close()
       server.stop(true)

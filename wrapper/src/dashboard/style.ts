@@ -30,7 +30,14 @@ main{min-width:0}
 .top p{margin:2px 0 0;color:var(--muted);font-size:13px}
 .top p:empty{display:none}
 .content{padding:24px 36px 56px}
-#tasks:empty{display:none}
+#tasks:empty,#alerts:empty{display:none}
+.alert{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px 16px;padding:12px 36px;border-bottom:1px solid var(--line);border-left:4px solid #111;background:#fff;font-size:13.5px}
+.alert.important{border-left-color:#666}
+.alert.optional{border-left-color:#ccc}
+.alert-text{flex:1;min-width:260px}
+.alert-fix{margin-top:6px}
+.alert-fix code{font-size:13px;padding:2px 6px;user-select:all}
+@media (max-width:860px){.alert{padding:12px 16px}}
 .task{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:10px 36px;border-bottom:1px solid var(--line);background:var(--soft);font-size:13px}
 .task .label{font-weight:500;display:inline-flex;align-items:center;gap:8px}
 .task .bar{flex:1;max-width:320px}

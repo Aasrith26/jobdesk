@@ -254,7 +254,7 @@ export async function buildReview(p: Paths, cfg: Config, job: { key: string; url
   const cvPdf = pdfOf(row.cv_file)
   const letterPdf = row.cover_letter_file ? pdfOf(row.cover_letter_file) : ""
   if (!cvTex) warnings.push(`The CV file ${row.cv_file} is missing, so there is nothing to compare. Draft it again before applying.`)
-  else if (!existsSync(join(p.root, cvPdf))) warnings.push("There's no PDF of the CV yet, because LaTeX isn't installed on this computer. The dashboard's Setup page shows how to install it.")
+  else if (!existsSync(join(p.root, cvPdf))) warnings.push(`There's no PDF of the CV yet, and job sites need one. If LaTeX isn't installed, run this in the jobdesk folder: ${process.platform === "win32" ? 'powershell -c "irm https://drop-ps1.fullyjustified.net | iex"' : "sh wrapper/install.sh --latex"}. Then apply again to build the PDFs.`)
   const review: ApplicationReview = {
     key: job.key, url: job.url, company: row.company || job.company, role: row.role || job.role, site: pol.name, how,
     how_note: how === "fill"

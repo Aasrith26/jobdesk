@@ -57,10 +57,11 @@ export async function doctor(): Promise<Check[]> {
   }
   const claude = findClaude()
   checks.push({ name: "Claude Code", ok: !!claude, detail: claude ? `${claude.version} (${claude.cmd})` : "not found. Only the free features will work.", fix: "Install it from https://claude.com/claude-code, then run: claude", required: false })
-  const tex = (await has("tectonic")) ?? (await has("lualatex")) ?? (await has("xelatex")) ?? (await has("pdflatex"))
+  // install.sh puts Tectonic in ~/.local/bin, which isn't always on PATH.
+  const tex = (await has("tectonic")) ?? (await has(join(process.env.HOME ?? "", ".local", "bin", "tectonic"))) ?? (await has("lualatex")) ?? (await has("xelatex")) ?? (await has("pdflatex"))
   checks.push({
     name: "LaTeX (to make PDFs)", ok: !!tex, detail: tex ?? "not found",
-    fix: WIN ? 'powershell -c "irm https://drop-ps1.fullyjustified.net | iex"   (installs Tectonic)' : "curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh   (installs Tectonic)",
+    fix: WIN ? 'powershell -c "irm https://drop-ps1.fullyjustified.net | iex"' : "sh wrapper/install.sh --latex",
     required: false,
   })
   const uv = await has("uv")

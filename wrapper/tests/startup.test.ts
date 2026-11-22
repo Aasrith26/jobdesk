@@ -272,6 +272,34 @@ describe("background tasks: progress you can leave and come back to", () => {
   })
 })
 
+describe("problems are shown, with the fix, on every page", () => {
+  test("missing LaTeX and a reached spending limit come back with what they break and what to do", async () => {
+    const { issuesFromChecks } = await import("../src/health.ts")
+    const p = tmpWorkspace()
+    let checks = [
+      { name: "Python", ok: true, detail: "3.12", required: true },
+      { name: "LaTeX (to make PDFs)", ok: false, detail: "not found", fix: "sh wrapper/install.sh --latex", required: false },
+    ]
+    const h = startDashboard(p, 0, { healthCheck: async () => issuesFromChecks(checks) })
+    const base = h.url.replace(/\/$/, "")
+    await Bun.sleep(50)
+    let s = await (await fetch(base + "/api/state")).json()
+    expect(s.health).toEqual([expect.objectContaining({ title: "PDFs can't be made", level: "important", fix: "sh wrapper/install.sh --latex" })])
+    // Spending limit reached: paid features pause, and the page says so.
+    const cfg = readConfig(p.config)
+    cfg.monthly_budget_usd = 1
+    writeConfig(p.config, cfg)
+    writeFileSync(p.costs, JSON.stringify({ at: new Date().toISOString(), task: "draft", model: "sonnet", usd: 2, ok: true }) + "\n")
+    s = await (await fetch(base + "/api/state")).json()
+    expect(s.health[0]).toMatchObject({ id: "budget", level: "blocking" })
+    // Installed it: "Check again" clears the LaTeX problem.
+    checks = [{ name: "LaTeX (to make PDFs)", ok: true, detail: "tectonic 0.15", required: false } as never]
+    const r = await (await fetch(base + "/api/health/recheck", { method: "POST", headers: { "content-type": "application/json", "x-jobdesk-token": h.token }, body: "{}" })).json()
+    expect(r.health.map((i: { id: string }) => i.id)).toEqual(["budget"])
+    h.stop()
+  })
+})
+
 describe("starting at login", () => {
   test("macOS: a per-user LaunchAgent that runs jobdesk start, with paths escaped", () => {
     const p = tmpWorkspace()
